@@ -1,0 +1,3864 @@
+{
+  "LQFP100": {
+    "pin_map": {
+      "64": "PC7",
+      "96": "PB9",
+      "99": "VSS",
+      "100": "VDD",
+      "83": "PD2",
+      "1": "PE2",
+      "17": "PC2",
+      "19": "PF2",
+      "6": "VBAT",
+      "7": "PC13",
+      "8": "PC14-OSC32_IN",
+      "9": "PC15-OSC32_OUT",
+      "12": "PF0-OSC_IN",
+      "13": "PF1-OSC_OUT",
+      "14": "NRST",
+      "20": "VSSA",
+      "32": "PA7",
+      "35": "PB0",
+      "36": "PB1",
+      "53": "PB14",
+      "54": "PB15",
+      "98": "PE1",
+      "67": "PA8",
+      "68": "PA9",
+      "69": "PA10",
+      "70": "PA11",
+      "21": "VDDA",
+      "23": "PA0",
+      "24": "PA1",
+      "25": "PA2",
+      "26": "PA3",
+      "29": "PA4",
+      "30": "PA5",
+      "31": "PA6",
+      "37": "PB2",
+      "47": "PB10",
+      "48": "PB11",
+      "49": "VSS",
+      "50": "VDD",
+      "18": "PC3",
+      "51": "PB12",
+      "52": "PB13",
+      "15": "PC0",
+      "16": "PC1",
+      "71": "PA12",
+      "72": "PA13",
+      "74": "VSS",
+      "75": "VDDIO2",
+      "76": "PA14",
+      "77": "PA15",
+      "89": "PB3",
+      "90": "PB4",
+      "91": "PB5",
+      "92": "PB6",
+      "93": "PB7",
+      "94": "BOOT0",
+      "95": "PB8",
+      "27": "VSS",
+      "28": "VDD",
+      "33": "PC4",
+      "34": "PC5",
+      "63": "PC6",
+      "65": "PC8",
+      "66": "PC9",
+      "78": "PC10",
+      "79": "PC11",
+      "80": "PC12",
+      "2": "PE3",
+      "3": "PE4",
+      "4": "PE5",
+      "5": "PE6",
+      "10": "PF9",
+      "11": "PF10",
+      "22": "PF3",
+      "38": "PE7",
+      "39": "PE8",
+      "40": "PE9",
+      "41": "PE10",
+      "42": "PE11",
+      "43": "PE12",
+      "44": "PE13",
+      "45": "PE14",
+      "46": "PE15",
+      "55": "PD8",
+      "56": "PD9",
+      "57": "PD10",
+      "58": "PD11",
+      "59": "PD12",
+      "60": "PD13",
+      "61": "PD14",
+      "62": "PD15",
+      "73": "PF6",
+      "81": "PD0",
+      "82": "PD1",
+      "84": "PD3",
+      "85": "PD4",
+      "86": "PD5",
+      "87": "PD6",
+      "88": "PD7",
+      "97": "PE0"
+    },
+    "peripheral_table": {
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "64",
+          "32",
+          "91",
+          "3"
+        ]
+      },
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "96",
+          "51",
+          "81"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "96",
+          "51",
+          "81"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "96",
+          "93"
+        ]
+      },
+      "IR_OUT": {
+        "pad-number": [
+          "96",
+          "72"
+        ]
+      },
+      "TMR17_CH1": {
+        "actual": "TMR17_CH1",
+        "pad-number": [
+          "96",
+          "32",
+          "98"
+        ]
+      },
+      "CAN_TX": {
+        "actual": "CAN_TX",
+        "pad-number": [
+          "96",
+          "71",
+          "82"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "83",
+          "36",
+          "53",
+          "59"
+        ]
+      },
+      "TMR3_ETR": {
+        "actual": "TMR3_ETR",
+        "pad-number": [
+          "83",
+          "1"
+        ]
+      },
+      "TSC_G7_IO1": {
+        "pad-number": [
+          "1"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "17",
+          "53",
+          "84"
+        ]
+      },
+      "I2S2_MCK": {
+        "actual": "I2S2_MCK",
+        "pad-number": [
+          "17",
+          "53",
+          "84"
+        ]
+      },
+      "ADC_IN12": {
+        "actual": "ADC_IN12",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "WKUP_8": {
+        "actual": "WKUP8",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "WKUP_2": {
+        "actual": "WKUP2",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "RTC_TAMP1": {
+        "actual": "RTC_TAMP1",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "RTC_TS": {
+        "actual": "RTC_TS",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "RTC_OUT": {
+        "actual": "RTC_OUT",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "CRS_SYNC": {
+        "pad-number": [
+          "12",
+          "67",
+          "62"
+        ]
+      },
+      "OSC_IN": {
+        "actual": "OSC_IN",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "OSC_OUT": {
+        "actual": "OSC_OUT",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "32",
+          "91",
+          "46"
+        ]
+      },
+      "I2S1_SD": {
+        "actual": "I2S1_SD",
+        "pad-number": [
+          "32",
+          "91",
+          "46"
+        ]
+      },
+      "TMR14_CH1": {
+        "actual": "TMR14_CH1",
+        "pad-number": [
+          "32",
+          "36",
+          "29"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "32",
+          "52",
+          "39"
+        ]
+      },
+      "COMP2_OUT": {
+        "pad-number": [
+          "32",
+          "25",
+          "71"
+        ]
+      },
+      "TSC_G2_IO4": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "ADC_IN7": {
+        "actual": "ADC_IN7",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "35",
+          "65",
+          "4"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "35",
+          "53",
+          "41"
+        ]
+      },
+      "TSC_G3_IO2": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "35",
+          "51",
+          "80",
+          "57"
+        ]
+      },
+      "ADC_IN8": {
+        "actual": "ADC_IN8",
+        "pad-number": [
+          "35"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "36",
+          "66",
+          "5"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "36",
+          "54",
+          "43"
+        ]
+      },
+      "TSC_G3_IO3": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "ADC_IN9": {
+        "actual": "ADC_IN9",
+        "pad-number": [
+          "36"
+        ]
+      },
+      "I2C2_SDA": {
+        "actual": "I2C2_SDA",
+        "pad-number": [
+          "53",
+          "48"
+        ]
+      },
+      "TMR15_CH1": {
+        "actual": "TMR15_CH1",
+        "pad-number": [
+          "53",
+          "25",
+          "10"
+        ]
+      },
+      "TSC_G6_IO4": {
+        "pad-number": [
+          "53"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "54",
+          "18",
+          "85"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "54",
+          "18",
+          "85"
+        ]
+      },
+      "TMR15_CH1N": {
+        "actual": "TMR15_CH1N",
+        "pad-number": [
+          "54",
+          "24"
+        ]
+      },
+      "TMR15_CH2": {
+        "actual": "TMR15_CH2",
+        "pad-number": [
+          "54",
+          "26",
+          "11"
+        ]
+      },
+      "WKUP_7": {
+        "actual": "WKUP7",
+        "pad-number": [
+          "54"
+        ]
+      },
+      "RTC_REFIN": {
+        "actual": "RTC_REFIN",
+        "pad-number": [
+          "54"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "67"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "67",
+          "40"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "67"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "68",
+          "92"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "68",
+          "42"
+        ]
+      },
+      "TMR15_BKIN": {
+        "actual": "TMR15_BKIN",
+        "pad-number": [
+          "68",
+          "51"
+        ]
+      },
+      "TSC_G4_IO1": {
+        "pad-number": [
+          "68"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "69",
+          "93"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "69",
+          "44"
+        ]
+      },
+      "TMR17_BKIN": {
+        "actual": "TMR17_BKIN",
+        "pad-number": [
+          "69",
+          "90"
+        ]
+      },
+      "TSC_G4_IO2": {
+        "pad-number": [
+          "69"
+        ]
+      },
+      "CAN_RX": {
+        "actual": "CAN_RX",
+        "pad-number": [
+          "70",
+          "95",
+          "81"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "70"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "70",
+          "45"
+        ]
+      },
+      "COMP1_OUT": {
+        "pad-number": [
+          "70",
+          "23",
+          "31"
+        ]
+      },
+      "TSC_G4_IO3": {
+        "pad-number": [
+          "70"
+        ]
+      },
+      "USBD_DM": {
+        "pad-number": [
+          "70"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "23",
+          "84"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "23",
+          "30",
+          "77"
+        ]
+      },
+      "TSC_G1_IO1": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "USART4_TX": {
+        "actual": "USART4_TX",
+        "pad-number": [
+          "23",
+          "78"
+        ]
+      },
+      "RTC_TAMP2": {
+        "actual": "RTC_TAMP2",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "WKUP_1": {
+        "actual": "WKUP1",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "ADC_IN0": {
+        "actual": "ADC_IN0",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP1_INM6": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "24",
+          "85"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "24",
+          "89"
+        ]
+      },
+      "TSC_G1_IO2": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "USART4_RX": {
+        "actual": "USART4_RX",
+        "pad-number": [
+          "24",
+          "79"
+        ]
+      },
+      "ADC_IN1": {
+        "actual": "ADC_IN1",
+        "pad-number": [
+          "24"
+        ]
+      },
+      "COMP1_INP": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "25",
+          "76",
+          "86"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "25",
+          "47"
+        ]
+      },
+      "TSC_G1_IO3": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "ADC_IN2": {
+        "actual": "ADC_IN2",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "COMP2_INM6": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "WKUP_4": {
+        "actual": "WKUP4",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "26",
+          "77",
+          "87"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "26",
+          "48"
+        ]
+      },
+      "TSC_G1_IO4": {
+        "pad-number": [
+          "26"
+        ]
+      },
+      "ADC_IN3": {
+        "actual": "ADC_IN3",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "COMP2_INP": {
+        "pad-number": [
+          "26"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "29",
+          "77",
+          "43"
+        ]
+      },
+      "I2S1_WS": {
+        "actual": "I2S1_WS",
+        "pad-number": [
+          "29",
+          "77",
+          "43"
+        ]
+      },
+      "TSC_G2_IO1": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "29",
+          "88"
+        ]
+      },
+      "COMP1_INM4": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP2_INM4": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "ADC_IN4": {
+        "actual": "ADC_IN4",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "DAC_OUT1": {
+        "actual": "DAC_OUT1",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "30",
+          "89",
+          "44"
+        ]
+      },
+      "I2S1_CK": {
+        "actual": "I2S1_CK",
+        "pad-number": [
+          "30",
+          "89",
+          "44"
+        ]
+      },
+      "CEC": {
+        "pad-number": [
+          "30",
+          "47",
+          "95"
+        ]
+      },
+      "TSC_G2_IO2": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP1_INM5": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP2_INM5": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "ADC_IN5": {
+        "actual": "ADC_IN5",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "DAC_OUT2": {
+        "actual": "DAC_OUT2",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "31",
+          "90",
+          "45"
+        ]
+      },
+      "I2S1_MCK": {
+        "actual": "I2S1_MCK",
+        "pad-number": [
+          "31",
+          "90",
+          "45"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "31",
+          "90",
+          "63",
+          "2"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "31",
+          "51",
+          "46"
+        ]
+      },
+      "TMR16_CH1": {
+        "actual": "TMR16_CH1",
+        "pad-number": [
+          "31",
+          "95",
+          "97"
+        ]
+      },
+      "TSC_G2_IO3": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "31",
+          "52",
+          "58"
+        ]
+      },
+      "ADC_IN6": {
+        "actual": "ADC_IN6",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "TSC_G3_IO4": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "47",
+          "52",
+          "82"
+        ]
+      },
+      "I2C2_SCL": {
+        "actual": "I2C2_SCL",
+        "pad-number": [
+          "47",
+          "52"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "47",
+          "33",
+          "78",
+          "55"
+        ]
+      },
+      "TSC_SYNC": {
+        "pad-number": [
+          "47",
+          "95"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "48",
+          "34",
+          "79",
+          "56"
+        ]
+      },
+      "TSC_G6_IO1": {
+        "pad-number": [
+          "48"
+        ]
+      },
+      "ADC_IN13": {
+        "actual": "ADC_IN13",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TSC_G6_IO2": {
+        "pad-number": [
+          "51"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "52",
+          "82"
+        ]
+      },
+      "TSC_G6_IO3": {
+        "pad-number": [
+          "52"
+        ]
+      },
+      "ADC_IN10": {
+        "actual": "ADC_IN10",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "ADC_IN11": {
+        "actual": "ADC_IN11",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "71"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "71",
+          "38"
+        ]
+      },
+      "TSC_G4_IO4": {
+        "pad-number": [
+          "71"
+        ]
+      },
+      "USBD_DP": {
+        "pad-number": [
+          "71"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "72"
+        ]
+      },
+      "USBD_NOE": {
+        "pad-number": [
+          "72"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "76"
+        ]
+      },
+      "USART4_RTS": {
+        "actual": "USART4_RTS",
+        "pad-number": [
+          "77"
+        ]
+      },
+      "TSC_G5_IO1": {
+        "pad-number": [
+          "89"
+        ]
+      },
+      "TSC_G5_IO2": {
+        "pad-number": [
+          "90"
+        ]
+      },
+      "I2C1_SMBA": {
+        "actual": "I2C1_SMBA",
+        "pad-number": [
+          "91"
+        ]
+      },
+      "TMR16_BKIN": {
+        "actual": "TMR16_BKIN",
+        "pad-number": [
+          "91"
+        ]
+      },
+      "WKUP_6": {
+        "actual": "WKUP6",
+        "pad-number": [
+          "91"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "92",
+          "95"
+        ]
+      },
+      "TMR16_CH1N": {
+        "actual": "TMR16_CH1N",
+        "pad-number": [
+          "92"
+        ]
+      },
+      "TSC_G5_IO3": {
+        "pad-number": [
+          "92"
+        ]
+      },
+      "USART4_CTS": {
+        "actual": "USART4_CTS",
+        "pad-number": [
+          "93"
+        ]
+      },
+      "TMR17_CH1N": {
+        "actual": "TMR17_CH1N",
+        "pad-number": [
+          "93"
+        ]
+      },
+      "TSC_G5_IO4": {
+        "pad-number": [
+          "93"
+        ]
+      },
+      "ADC_IN14": {
+        "actual": "ADC_IN14",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "TSC_G3_IO1": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "ADC_IN15": {
+        "actual": "ADC_IN15",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "WKUP_5": {
+        "actual": "WKUP5",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "USART4_CK": {
+        "actual": "USART4_CK",
+        "pad-number": [
+          "80"
+        ]
+      },
+      "TSC_G7_IO2": {
+        "pad-number": [
+          "2"
+        ]
+      },
+      "TSC_G7_IO3": {
+        "pad-number": [
+          "3"
+        ]
+      },
+      "TSC_G7_IO4": {
+        "pad-number": [
+          "4"
+        ]
+      },
+      "WKUP_3": {
+        "actual": "WKUP3",
+        "pad-number": [
+          "5"
+        ]
+      },
+      "RTC_TAMP3": {
+        "actual": "RTC_TAMP3",
+        "pad-number": [
+          "5"
+        ]
+      },
+      "TSC_G8_IO1": {
+        "pad-number": [
+          "59"
+        ]
+      },
+      "TSC_G8_IO2": {
+        "pad-number": [
+          "60"
+        ]
+      },
+      "TSC_G8_IO3": {
+        "pad-number": [
+          "61"
+        ]
+      },
+      "TSC_G8_IO4": {
+        "pad-number": [
+          "62"
+        ]
+      }
+    }
+  },
+  "LQFP64": {
+    "pin_map": {
+      "38": "PC7",
+      "62": "PB9",
+      "63": "VSS",
+      "64": "VDD",
+      "54": "PD2",
+      "10": "PC2",
+      "1": "VBAT",
+      "2": "PC13",
+      "3": "PC14-OSC32_IN",
+      "4": "PC15-OSC32_OUT",
+      "5": "PF0-OSC_IN",
+      "6": "PF1-OSC_OUT",
+      "7": "NRST",
+      "12": "VSSA",
+      "23": "PA7",
+      "26": "PB0",
+      "27": "PB1",
+      "35": "PB14",
+      "36": "PB15",
+      "41": "PA8",
+      "42": "PA9",
+      "43": "PA10",
+      "44": "PA11",
+      "13": "VDDA",
+      "14": "PA0",
+      "15": "PA1",
+      "16": "PA2",
+      "17": "PA3",
+      "20": "PA4",
+      "21": "PA5",
+      "22": "PA6",
+      "28": "PB2",
+      "29": "PB10",
+      "30": "PB11",
+      "31": "VSS",
+      "32": "VDD",
+      "11": "PC3",
+      "33": "PB12",
+      "34": "PB13",
+      "8": "PC0",
+      "9": "PC1",
+      "45": "PA12",
+      "46": "PA13",
+      "47": "VSS",
+      "48": "VDDIO2",
+      "49": "PA14",
+      "50": "PA15",
+      "55": "PB3",
+      "56": "PB4",
+      "57": "PB5",
+      "58": "PB6",
+      "59": "PB7",
+      "60": "BOOT0",
+      "61": "PB8",
+      "18": "VSS",
+      "19": "VDD",
+      "24": "PC4",
+      "25": "PC5",
+      "37": "PC6",
+      "39": "PC8",
+      "40": "PC9",
+      "51": "PC10",
+      "52": "PC11",
+      "53": "PC12"
+    },
+    "peripheral_table": {
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "38",
+          "23",
+          "57"
+        ]
+      },
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "62",
+          "33"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "62",
+          "33"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "62",
+          "59"
+        ]
+      },
+      "IR_OUT": {
+        "pad-number": [
+          "62",
+          "46"
+        ]
+      },
+      "TMR17_CH1": {
+        "actual": "TMR17_CH1",
+        "pad-number": [
+          "62",
+          "23"
+        ]
+      },
+      "CAN_TX": {
+        "actual": "CAN_TX",
+        "pad-number": [
+          "62",
+          "45"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "54",
+          "27",
+          "35"
+        ]
+      },
+      "TMR3_ETR": {
+        "actual": "TMR3_ETR",
+        "pad-number": [
+          "54"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "10",
+          "35"
+        ]
+      },
+      "I2S2_MCK": {
+        "actual": "I2S2_MCK",
+        "pad-number": [
+          "10",
+          "35"
+        ]
+      },
+      "ADC_IN12": {
+        "actual": "ADC_IN12",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "WKUP_2": {
+        "actual": "WKUP2",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "RTC_TAMP1": {
+        "actual": "RTC_TAMP1",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "RTC_TS": {
+        "actual": "RTC_TS",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "RTC_OUT": {
+        "actual": "RTC_OUT",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "3"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "4"
+        ]
+      },
+      "CRS_SYNC": {
+        "pad-number": [
+          "5",
+          "41"
+        ]
+      },
+      "OSC_IN": {
+        "actual": "OSC_IN",
+        "pad-number": [
+          "5"
+        ]
+      },
+      "OSC_OUT": {
+        "actual": "OSC_OUT",
+        "pad-number": [
+          "6"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "23",
+          "57"
+        ]
+      },
+      "I2S1_SD": {
+        "actual": "I2S1_SD",
+        "pad-number": [
+          "23",
+          "57"
+        ]
+      },
+      "TMR14_CH1": {
+        "actual": "TMR14_CH1",
+        "pad-number": [
+          "23",
+          "27",
+          "20"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "23",
+          "34"
+        ]
+      },
+      "COMP2_OUT": {
+        "pad-number": [
+          "23",
+          "16",
+          "45"
+        ]
+      },
+      "TSC_G2_IO4": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "ADC_IN7": {
+        "actual": "ADC_IN7",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "26",
+          "39"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "26",
+          "35"
+        ]
+      },
+      "TSC_G3_IO2": {
+        "pad-number": [
+          "26"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "26",
+          "33",
+          "53"
+        ]
+      },
+      "ADC_IN8": {
+        "actual": "ADC_IN8",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "27",
+          "40"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "27",
+          "36"
+        ]
+      },
+      "TSC_G3_IO3": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "ADC_IN9": {
+        "actual": "ADC_IN9",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "I2C2_SDA": {
+        "actual": "I2C2_SDA",
+        "pad-number": [
+          "35",
+          "30"
+        ]
+      },
+      "TMR15_CH1": {
+        "actual": "TMR15_CH1",
+        "pad-number": [
+          "35",
+          "16"
+        ]
+      },
+      "TSC_G6_IO4": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "36",
+          "11"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "36",
+          "11"
+        ]
+      },
+      "TMR15_CH1N": {
+        "actual": "TMR15_CH1N",
+        "pad-number": [
+          "36",
+          "15"
+        ]
+      },
+      "TMR15_CH2": {
+        "actual": "TMR15_CH2",
+        "pad-number": [
+          "36",
+          "17"
+        ]
+      },
+      "WKUP_7": {
+        "actual": "WKUP7",
+        "pad-number": [
+          "36"
+        ]
+      },
+      "RTC_REFIN": {
+        "actual": "RTC_REFIN",
+        "pad-number": [
+          "36"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "42",
+          "58"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "42"
+        ]
+      },
+      "TMR15_BKIN": {
+        "actual": "TMR15_BKIN",
+        "pad-number": [
+          "42",
+          "33"
+        ]
+      },
+      "TSC_G4_IO1": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "43",
+          "59"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "TMR17_BKIN": {
+        "actual": "TMR17_BKIN",
+        "pad-number": [
+          "43",
+          "56"
+        ]
+      },
+      "TSC_G4_IO2": {
+        "pad-number": [
+          "43"
+        ]
+      },
+      "CAN_RX": {
+        "actual": "CAN_RX",
+        "pad-number": [
+          "44",
+          "61"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "44"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "44"
+        ]
+      },
+      "COMP1_OUT": {
+        "pad-number": [
+          "44",
+          "14",
+          "22"
+        ]
+      },
+      "TSC_G4_IO3": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "USBD_DM": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "14",
+          "21",
+          "50"
+        ]
+      },
+      "TSC_G1_IO1": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "USART4_TX": {
+        "actual": "USART4_TX",
+        "pad-number": [
+          "14",
+          "51"
+        ]
+      },
+      "RTC_TAMP2": {
+        "actual": "RTC_TAMP2",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "WKUP_1": {
+        "actual": "WKUP1",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC_IN0": {
+        "actual": "ADC_IN0",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP1_INM6": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "15",
+          "55"
+        ]
+      },
+      "TSC_G1_IO2": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "USART4_RX": {
+        "actual": "USART4_RX",
+        "pad-number": [
+          "15",
+          "52"
+        ]
+      },
+      "ADC_IN1": {
+        "actual": "ADC_IN1",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP1_INP": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "16",
+          "49"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "16",
+          "29"
+        ]
+      },
+      "TSC_G1_IO3": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "ADC_IN2": {
+        "actual": "ADC_IN2",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP2_INM6": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "WKUP_4": {
+        "actual": "WKUP4",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "17",
+          "50"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "17",
+          "30"
+        ]
+      },
+      "TSC_G1_IO4": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "ADC_IN3": {
+        "actual": "ADC_IN3",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP2_INP": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "20",
+          "50"
+        ]
+      },
+      "I2S1_WS": {
+        "actual": "I2S1_WS",
+        "pad-number": [
+          "20",
+          "50"
+        ]
+      },
+      "TSC_G2_IO1": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP1_INM4": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP2_INM4": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "ADC_IN4": {
+        "actual": "ADC_IN4",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "DAC_OUT1": {
+        "actual": "DAC_OUT1",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "21",
+          "55"
+        ]
+      },
+      "I2S1_CK": {
+        "actual": "I2S1_CK",
+        "pad-number": [
+          "21",
+          "55"
+        ]
+      },
+      "CEC": {
+        "pad-number": [
+          "21",
+          "29",
+          "61"
+        ]
+      },
+      "TSC_G2_IO2": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP1_INM5": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP2_INM5": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "ADC_IN5": {
+        "actual": "ADC_IN5",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "DAC_OUT2": {
+        "actual": "DAC_OUT2",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "22",
+          "56"
+        ]
+      },
+      "I2S1_MCK": {
+        "actual": "I2S1_MCK",
+        "pad-number": [
+          "22",
+          "56"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "22",
+          "56",
+          "37"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "22",
+          "33"
+        ]
+      },
+      "TMR16_CH1": {
+        "actual": "TMR16_CH1",
+        "pad-number": [
+          "22",
+          "61"
+        ]
+      },
+      "TSC_G2_IO3": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "22",
+          "34"
+        ]
+      },
+      "ADC_IN6": {
+        "actual": "ADC_IN6",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "TSC_G3_IO4": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "29",
+          "34"
+        ]
+      },
+      "I2C2_SCL": {
+        "actual": "I2C2_SCL",
+        "pad-number": [
+          "29",
+          "34"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "29",
+          "24",
+          "51"
+        ]
+      },
+      "TSC_SYNC": {
+        "pad-number": [
+          "29",
+          "61"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "30",
+          "25",
+          "52"
+        ]
+      },
+      "TSC_G6_IO1": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "ADC_IN13": {
+        "actual": "ADC_IN13",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "TSC_G6_IO2": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "TSC_G6_IO3": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "ADC_IN10": {
+        "actual": "ADC_IN10",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "ADC_IN11": {
+        "actual": "ADC_IN11",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "45"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "45"
+        ]
+      },
+      "TSC_G4_IO4": {
+        "pad-number": [
+          "45"
+        ]
+      },
+      "USBD_DP": {
+        "pad-number": [
+          "45"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "USBD_NOE": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "49"
+        ]
+      },
+      "USART4_RTS": {
+        "actual": "USART4_RTS",
+        "pad-number": [
+          "50"
+        ]
+      },
+      "TSC_G5_IO1": {
+        "pad-number": [
+          "55"
+        ]
+      },
+      "TSC_G5_IO2": {
+        "pad-number": [
+          "56"
+        ]
+      },
+      "I2C1_SMBA": {
+        "actual": "I2C1_SMBA",
+        "pad-number": [
+          "57"
+        ]
+      },
+      "TMR16_BKIN": {
+        "actual": "TMR16_BKIN",
+        "pad-number": [
+          "57"
+        ]
+      },
+      "WKUP_6": {
+        "actual": "WKUP6",
+        "pad-number": [
+          "57"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "58",
+          "61"
+        ]
+      },
+      "TMR16_CH1N": {
+        "actual": "TMR16_CH1N",
+        "pad-number": [
+          "58"
+        ]
+      },
+      "TSC_G5_IO3": {
+        "pad-number": [
+          "58"
+        ]
+      },
+      "USART4_CTS": {
+        "actual": "USART4_CTS",
+        "pad-number": [
+          "59"
+        ]
+      },
+      "TMR17_CH1N": {
+        "actual": "TMR17_CH1N",
+        "pad-number": [
+          "59"
+        ]
+      },
+      "TSC_G5_IO4": {
+        "pad-number": [
+          "59"
+        ]
+      },
+      "ADC_IN14": {
+        "actual": "ADC_IN14",
+        "pad-number": [
+          "24"
+        ]
+      },
+      "TSC_G3_IO1": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "ADC_IN15": {
+        "actual": "ADC_IN15",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "WKUP_5": {
+        "actual": "WKUP5",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "USART4_CK": {
+        "actual": "USART4_CK",
+        "pad-number": [
+          "53"
+        ]
+      }
+    }
+  },
+  "LQFP48": {
+    "pin_map": {
+      "46": "PB9",
+      "47": "VSS",
+      "48": "VDD",
+      "1": "VBAT",
+      "2": "PC13",
+      "3": "PC14-OSC32_IN",
+      "4": "PC15-OSC32_OUT",
+      "5": "PF0-OSC_IN",
+      "6": "PF1-OSC_OUT",
+      "7": "NRST",
+      "8": "VSSA",
+      "17": "PA7",
+      "18": "PB0",
+      "19": "PB1",
+      "27": "PB14",
+      "28": "PB15",
+      "29": "PA8",
+      "30": "PA9",
+      "31": "PA10",
+      "32": "PA11",
+      "9": "VDDA",
+      "10": "PA0",
+      "11": "PA1",
+      "12": "PA2",
+      "13": "PA3",
+      "14": "PA4",
+      "15": "PA5",
+      "16": "PA6",
+      "20": "PB2",
+      "21": "PB10",
+      "22": "PB11",
+      "23": "VSS",
+      "24": "VDD",
+      "25": "PB12",
+      "26": "PB13",
+      "33": "PA12",
+      "34": "PA13",
+      "35": "VSS",
+      "36": "VDDIO2",
+      "37": "PA14",
+      "38": "PA15",
+      "39": "PB3",
+      "40": "PB4",
+      "41": "PB5",
+      "42": "PB6",
+      "43": "PB7",
+      "44": "BOOT0",
+      "45": "PB8"
+    },
+    "peripheral_table": {
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "46",
+          "25"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "46",
+          "25"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "46",
+          "43"
+        ]
+      },
+      "IR_OUT": {
+        "pad-number": [
+          "46",
+          "34"
+        ]
+      },
+      "TMR17_CH1": {
+        "actual": "TMR17_CH1",
+        "pad-number": [
+          "46",
+          "17"
+        ]
+      },
+      "CAN_TX": {
+        "actual": "CAN_TX",
+        "pad-number": [
+          "46",
+          "33"
+        ]
+      },
+      "WKUP_2": {
+        "actual": "WKUP2",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "RTC_TAMP1": {
+        "actual": "RTC_TAMP1",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "RTC_TS": {
+        "actual": "RTC_TS",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "RTC_OUT": {
+        "actual": "RTC_OUT",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "3"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "4"
+        ]
+      },
+      "CRS_SYNC": {
+        "pad-number": [
+          "5",
+          "29"
+        ]
+      },
+      "OSC_IN": {
+        "actual": "OSC_IN",
+        "pad-number": [
+          "5"
+        ]
+      },
+      "OSC_OUT": {
+        "actual": "OSC_OUT",
+        "pad-number": [
+          "6"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "I2S1_SD": {
+        "actual": "I2S1_SD",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "TMR14_CH1": {
+        "actual": "TMR14_CH1",
+        "pad-number": [
+          "17",
+          "19",
+          "14"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "17",
+          "26"
+        ]
+      },
+      "COMP2_OUT": {
+        "pad-number": [
+          "17",
+          "12",
+          "33"
+        ]
+      },
+      "TSC_G2_IO4": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "ADC_IN7": {
+        "actual": "ADC_IN7",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "18",
+          "27"
+        ]
+      },
+      "TSC_G3_IO2": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "18",
+          "25"
+        ]
+      },
+      "ADC_IN8": {
+        "actual": "ADC_IN8",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "19",
+          "27"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "19",
+          "28"
+        ]
+      },
+      "TSC_G3_IO3": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "ADC_IN9": {
+        "actual": "ADC_IN9",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "I2S2_MCK": {
+        "actual": "I2S2_MCK",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "I2C2_SDA": {
+        "actual": "I2C2_SDA",
+        "pad-number": [
+          "27",
+          "22"
+        ]
+      },
+      "TMR15_CH1": {
+        "actual": "TMR15_CH1",
+        "pad-number": [
+          "27",
+          "12"
+        ]
+      },
+      "TSC_G6_IO4": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "TMR15_CH1N": {
+        "actual": "TMR15_CH1N",
+        "pad-number": [
+          "28",
+          "11"
+        ]
+      },
+      "TMR15_CH2": {
+        "actual": "TMR15_CH2",
+        "pad-number": [
+          "28",
+          "13"
+        ]
+      },
+      "WKUP_7": {
+        "actual": "WKUP7",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "RTC_REFIN": {
+        "actual": "RTC_REFIN",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "30",
+          "42"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "TMR15_BKIN": {
+        "actual": "TMR15_BKIN",
+        "pad-number": [
+          "30",
+          "25"
+        ]
+      },
+      "TSC_G4_IO1": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "31",
+          "43"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "TMR17_BKIN": {
+        "actual": "TMR17_BKIN",
+        "pad-number": [
+          "31",
+          "40"
+        ]
+      },
+      "TSC_G4_IO2": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "CAN_RX": {
+        "actual": "CAN_RX",
+        "pad-number": [
+          "32",
+          "45"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "COMP1_OUT": {
+        "pad-number": [
+          "32",
+          "10",
+          "16"
+        ]
+      },
+      "TSC_G4_IO3": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "USBD_DM": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "10",
+          "15",
+          "38"
+        ]
+      },
+      "TSC_G1_IO1": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "USART4_TX": {
+        "actual": "USART4_TX",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "RTC_TAMP2": {
+        "actual": "RTC_TAMP2",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "WKUP_1": {
+        "actual": "WKUP1",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "ADC_IN0": {
+        "actual": "ADC_IN0",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_INM6": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "11",
+          "39"
+        ]
+      },
+      "TSC_G1_IO2": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "USART4_RX": {
+        "actual": "USART4_RX",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "ADC_IN1": {
+        "actual": "ADC_IN1",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP1_INP": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "12",
+          "37"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "12",
+          "21"
+        ]
+      },
+      "TSC_G1_IO3": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "ADC_IN2": {
+        "actual": "ADC_IN2",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP2_INM6": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "WKUP_4": {
+        "actual": "WKUP4",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "13",
+          "38"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "13",
+          "22"
+        ]
+      },
+      "TSC_G1_IO4": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "ADC_IN3": {
+        "actual": "ADC_IN3",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP2_INP": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "14",
+          "38"
+        ]
+      },
+      "I2S1_WS": {
+        "actual": "I2S1_WS",
+        "pad-number": [
+          "14",
+          "38"
+        ]
+      },
+      "TSC_G2_IO1": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP1_INM4": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP2_INM4": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC_IN4": {
+        "actual": "ADC_IN4",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "DAC_OUT1": {
+        "actual": "DAC_OUT1",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "15",
+          "39"
+        ]
+      },
+      "I2S1_CK": {
+        "actual": "I2S1_CK",
+        "pad-number": [
+          "15",
+          "39"
+        ]
+      },
+      "CEC": {
+        "pad-number": [
+          "15",
+          "21",
+          "45"
+        ]
+      },
+      "TSC_G2_IO2": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP1_INM5": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP2_INM5": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "ADC_IN5": {
+        "actual": "ADC_IN5",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "DAC_OUT2": {
+        "actual": "DAC_OUT2",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "16",
+          "40"
+        ]
+      },
+      "I2S1_MCK": {
+        "actual": "I2S1_MCK",
+        "pad-number": [
+          "16",
+          "40"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "16",
+          "40"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "16",
+          "25"
+        ]
+      },
+      "TMR16_CH1": {
+        "actual": "TMR16_CH1",
+        "pad-number": [
+          "16",
+          "45"
+        ]
+      },
+      "TSC_G2_IO3": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "16",
+          "26"
+        ]
+      },
+      "ADC_IN6": {
+        "actual": "ADC_IN6",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TSC_G3_IO4": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "21",
+          "26"
+        ]
+      },
+      "I2C2_SCL": {
+        "actual": "I2C2_SCL",
+        "pad-number": [
+          "21",
+          "26"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "TSC_SYNC": {
+        "pad-number": [
+          "21",
+          "45"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "TSC_G6_IO1": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "TSC_G6_IO2": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "TSC_G6_IO3": {
+        "pad-number": [
+          "26"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "TSC_G4_IO4": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "USBD_DP": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "USBD_NOE": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "USART4_RTS": {
+        "actual": "USART4_RTS",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TSC_G5_IO1": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "TSC_G5_IO2": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "I2C1_SMBA": {
+        "actual": "I2C1_SMBA",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "TMR16_BKIN": {
+        "actual": "TMR16_BKIN",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "WKUP_6": {
+        "actual": "WKUP6",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "42",
+          "45"
+        ]
+      },
+      "TMR16_CH1N": {
+        "actual": "TMR16_CH1N",
+        "pad-number": [
+          "42"
+        ]
+      },
+      "TSC_G5_IO3": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "USART4_CTS": {
+        "actual": "USART4_CTS",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "TMR17_CH1N": {
+        "actual": "TMR17_CH1N",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "TSC_G5_IO4": {
+        "pad-number": [
+          "43"
+        ]
+      }
+    }
+  },
+  "QFN48": {
+    "pin_map": {
+      "1": "PC7",
+      "2": "PB9",
+      "3": "VSS",
+      "4": "VDD",
+      "5": "PD2",
+      "6": "PE2",
+      "7": "PC2",
+      "8": "PB5",
+      "9": "PF2",
+      "10": "VBAT",
+      "11": "PC13",
+      "12": "PC14-OSC32_IN",
+      "13": "PC15-OSC32_OUT",
+      "14": "PF0-OSC_IN",
+      "15": "PF1-OSC_OUT",
+      "16": "NRST",
+      "17": "VSSA",
+      "18": "PA7",
+      "19": "PB0",
+      "20": "PB1",
+      "21": "PB14",
+      "22": "PB15",
+      "23": "PE1",
+      "24": "PC0",
+      "25": "PA8",
+      "26": "PA9",
+      "27": "PA10",
+      "28": "PA11",
+      "29": "VDDA",
+      "30": "PA0",
+      "31": "PA1",
+      "32": "PA2",
+      "33": "PA3",
+      "34": "PA4",
+      "35": "PE7",
+      "36": "PE8",
+      "37": "PA5",
+      "38": "PA6",
+      "39": "PB2",
+      "40": "PB10",
+      "41": "PB11",
+      "42": "VSS",
+      "43": "VDD",
+      "44": "PC3",
+      "45": "PB12",
+      "46": "PB13",
+      "47": "PC0",
+      "48": "PC1"
+    },
+    "peripheral_table": {
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "1",
+          "8",
+          "18"
+        ]
+      },
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "2",
+          "45"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "2",
+          "45"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "IR_OUT": {
+        "pad-number": [
+          "2"
+        ]
+      },
+      "TMR17_CH1": {
+        "actual": "TMR17_CH1",
+        "pad-number": [
+          "2",
+          "18",
+          "23"
+        ]
+      },
+      "CAN_TX": {
+        "actual": "CAN_TX",
+        "pad-number": [
+          "2"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "5",
+          "20",
+          "21"
+        ]
+      },
+      "TMR3_ETR": {
+        "actual": "TMR3_ETR",
+        "pad-number": [
+          "5",
+          "6"
+        ]
+      },
+      "TSC_G7_IO1": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "7",
+          "21"
+        ]
+      },
+      "I2S2_MCK": {
+        "actual": "I2S2_MCK",
+        "pad-number": [
+          "7",
+          "21"
+        ]
+      },
+      "ADC_IN12": {
+        "actual": "ADC_IN12",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "8",
+          "18"
+        ]
+      },
+      "I2S1_SD": {
+        "actual": "I2S1_SD",
+        "pad-number": [
+          "8",
+          "18"
+        ]
+      },
+      "I2C1_SMBA": {
+        "actual": "I2C1_SMBA",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "TMR16_BKIN": {
+        "actual": "TMR16_BKIN",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "WKUP_6": {
+        "actual": "WKUP6",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "WKUP_8": {
+        "actual": "WKUP8",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "WKUP_2": {
+        "actual": "WKUP2",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "RTC_TAMP1": {
+        "actual": "RTC_TAMP1",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "RTC_TS": {
+        "actual": "RTC_TS",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "RTC_OUT": {
+        "actual": "RTC_OUT",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "CRS_SYNC": {
+        "pad-number": [
+          "14",
+          "25"
+        ]
+      },
+      "OSC_IN": {
+        "actual": "OSC_IN",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "OSC_OUT": {
+        "actual": "OSC_OUT",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR14_CH1": {
+        "actual": "TMR14_CH1",
+        "pad-number": [
+          "18",
+          "20",
+          "34"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "18",
+          "36",
+          "46"
+        ]
+      },
+      "COMP2_OUT": {
+        "pad-number": [
+          "18",
+          "32"
+        ]
+      },
+      "TSC_G2_IO4": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "ADC_IN7": {
+        "actual": "ADC_IN7",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "19",
+          "21"
+        ]
+      },
+      "TSC_G3_IO2": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "19",
+          "45"
+        ]
+      },
+      "ADC_IN8": {
+        "actual": "ADC_IN8",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "20",
+          "22"
+        ]
+      },
+      "TSC_G3_IO3": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "ADC_IN9": {
+        "actual": "ADC_IN9",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "I2C2_SDA": {
+        "actual": "I2C2_SDA",
+        "pad-number": [
+          "21",
+          "41"
+        ]
+      },
+      "TMR15_CH1": {
+        "actual": "TMR15_CH1",
+        "pad-number": [
+          "21",
+          "32"
+        ]
+      },
+      "TSC_G6_IO4": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "22",
+          "44"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "22",
+          "44"
+        ]
+      },
+      "TMR15_CH1N": {
+        "actual": "TMR15_CH1N",
+        "pad-number": [
+          "22",
+          "31"
+        ]
+      },
+      "TMR15_CH2": {
+        "actual": "TMR15_CH2",
+        "pad-number": [
+          "22",
+          "33"
+        ]
+      },
+      "WKUP_7": {
+        "actual": "WKUP7",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "RTC_REFIN": {
+        "actual": "RTC_REFIN",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "ADC_IN10": {
+        "actual": "ADC_IN10",
+        "pad-number": [
+          "24",
+          "47"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "TMR15_BKIN": {
+        "actual": "TMR15_BKIN",
+        "pad-number": [
+          "26",
+          "45"
+        ]
+      },
+      "TSC_G4_IO1": {
+        "pad-number": [
+          "26"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "TMR17_BKIN": {
+        "actual": "TMR17_BKIN",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "TSC_G4_IO2": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "CAN_RX": {
+        "actual": "CAN_RX",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP1_OUT": {
+        "pad-number": [
+          "28",
+          "30",
+          "38"
+        ]
+      },
+      "TSC_G4_IO3": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "USBD_DM": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "30",
+          "37"
+        ]
+      },
+      "TSC_G1_IO1": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "USART4_TX": {
+        "actual": "USART4_TX",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "RTC_TAMP2": {
+        "actual": "RTC_TAMP2",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "WKUP_1": {
+        "actual": "WKUP1",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "ADC_IN0": {
+        "actual": "ADC_IN0",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP1_INM6": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "TSC_G1_IO2": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "USART4_RX": {
+        "actual": "USART4_RX",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "ADC_IN1": {
+        "actual": "ADC_IN1",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "COMP1_INP": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "32",
+          "40"
+        ]
+      },
+      "TSC_G1_IO3": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "ADC_IN2": {
+        "actual": "ADC_IN2",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "COMP2_INM6": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "WKUP_4": {
+        "actual": "WKUP4",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "33",
+          "41"
+        ]
+      },
+      "TSC_G1_IO4": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "ADC_IN3": {
+        "actual": "ADC_IN3",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "COMP2_INP": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "I2S1_WS": {
+        "actual": "I2S1_WS",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "TSC_G2_IO1": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "COMP1_INM4": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "COMP2_INM4": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "ADC_IN4": {
+        "actual": "ADC_IN4",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "DAC_OUT1": {
+        "actual": "DAC_OUT1",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "35"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "I2S1_CK": {
+        "actual": "I2S1_CK",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "CEC": {
+        "pad-number": [
+          "37",
+          "40"
+        ]
+      },
+      "TSC_G2_IO2": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "COMP1_INM5": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "COMP2_INM5": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "ADC_IN5": {
+        "actual": "ADC_IN5",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "DAC_OUT2": {
+        "actual": "DAC_OUT2",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "I2S1_MCK": {
+        "actual": "I2S1_MCK",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "38",
+          "45"
+        ]
+      },
+      "TMR16_CH1": {
+        "actual": "TMR16_CH1",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TSC_G2_IO3": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "38",
+          "46"
+        ]
+      },
+      "ADC_IN6": {
+        "actual": "ADC_IN6",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TSC_G3_IO4": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "40",
+          "46"
+        ]
+      },
+      "I2C2_SCL": {
+        "actual": "I2C2_SCL",
+        "pad-number": [
+          "40",
+          "46"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "40"
+        ]
+      },
+      "TSC_SYNC": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "TSC_G6_IO1": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "ADC_IN13": {
+        "actual": "ADC_IN13",
+        "pad-number": [
+          "44"
+        ]
+      },
+      "TSC_G6_IO2": {
+        "pad-number": [
+          "45"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "46"
+        ]
+      },
+      "TSC_G6_IO3": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "ADC_IN11": {
+        "actual": "ADC_IN11",
+        "pad-number": [
+          "48"
+        ]
+      }
+    }
+  }
+}

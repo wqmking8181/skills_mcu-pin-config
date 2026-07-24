@@ -1,0 +1,4604 @@
+{
+  "LQFP100": {
+    "pin_map": {
+      "97": "GPIO6",
+      "100": "GPIO29",
+      "1": "GPIO28",
+      "2": "XRSn",
+      "4": "VDD_1",
+      "7": "B2",
+      "8": "B3",
+      "9": "A2",
+      "13": "B11",
+      "19": "C0",
+      "21": "C2",
+      "22": "A1",
+      "23": "A0",
+      "24": "VREFHIB_C",
+      "26": "VREFLOB_C",
+      "29": "C1",
+      "31": "C3",
+      "32": "B12",
+      "12": "VSSA_1",
+      "11": "VDDA_1",
+      "36": "A4",
+      "39": "B4",
+      "40": "A10",
+      "46": "VDD_2",
+      "3": "VDDIO_1",
+      "50": "GPIO13",
+      "51": "GPIO12",
+      "52": "GPIO11",
+      "53": "GPIO33",
+      "54": "GPIO16",
+      "55": "GPIO17",
+      "56": "GPIO24",
+      "60": "TCK",
+      "61": "GPIO37_TDO",
+      "62": "TMS",
+      "63": "GPIO35_TDI",
+      "64": "GPIO32",
+      "68": "GPIO18_X2",
+      "69": "X1",
+      "47": "VDDIO_2",
+      "71": "VDD_3",
+      "74": "GPIO8",
+      "75": "GPIO4",
+      "76": "GPIO3",
+      "77": "GPIO2",
+      "78": "GPIO1",
+      "79": "GPIO0",
+      "70": "VDDIO_3",
+      "81": "GPIO23",
+      "82": "VSSIO",
+      "83": "GPIO22",
+      "84": "GPIO7",
+      "87": "VDD_4",
+      "80": "VDDIO_4",
+      "89": "GPIO5",
+      "90": "GPIO9",
+      "5": "VSS_1",
+      "6": "A6",
+      "17": "C4",
+      "45": "VSS_2",
+      "72": "VSS_3",
+      "73": "VREGENZ",
+      "86": "VSS_4",
+      "93": "GPIO10",
+      "98": "GPIO30",
+      "99": "GPIO31",
+      "10": "A3",
+      "14": "A15",
+      "16": "A14",
+      "18": "A11",
+      "48": "GPIO54",
+      "49": "GPIO53",
+      "57": "GPIO25",
+      "58": "GPIO26",
+      "59": "GPIO27",
+      "94": "GPIO34",
+      "95": "GPIO15",
+      "96": "GPIO14",
+      "15": "B10",
+      "20": "A7",
+      "25": "VREFHIA",
+      "27": "VREFLOA",
+      "28": "C5",
+      "30": "A12",
+      "33": "VSSA_2",
+      "34": "VDDA_2",
+      "35": "A5",
+      "37": "A8",
+      "38": "A9",
+      "41": "B0",
+      "42": "B5",
+      "43": "C12",
+      "44": "C14",
+      "65": "GPIO56",
+      "66": "GPIO57",
+      "67": "GPIO58",
+      "85": "GPIO40",
+      "88": "VDDIO_5",
+      "91": "GPIO39",
+      "92": "GPIO59"
+    },
+    "peripheral_table": {
+      "PWM4_A": {
+        "pad-number": [
+          "97",
+          "83"
+        ]
+      },
+      "OUTPUTXBAR4": {
+        "pad-number": [
+          "97",
+          "53",
+          "59",
+          "95"
+        ]
+      },
+      "SYNCOUT": {
+        "pad-number": [
+          "97"
+        ]
+      },
+      "QEP1_A": {
+        "pad-number": [
+          "97",
+          "1",
+          "63",
+          "93",
+          "57",
+          "94",
+          "65",
+          "85"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CANB_TX",
+        "pad-number": [
+          "97",
+          "51",
+          "54",
+          "74",
+          "67"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPIB_SOMI",
+        "pad-number": [
+          "97",
+          "54",
+          "99",
+          "57",
+          "66"
+        ]
+      },
+      "QSPI_IO0": {
+        "actual": "QSPI_IO0",
+        "pad-number": [
+          "97",
+          "51",
+          "64"
+        ]
+      },
+      "UART0_TX": {
+        "actual": "UARTA_TX",
+        "pad-number": [
+          "100",
+          "54",
+          "56",
+          "61",
+          "74",
+          "77"
+        ]
+      },
+      "PWM7_B": {
+        "pad-number": [
+          "100",
+          "50"
+        ]
+      },
+      "OUTPUTXBAR6": {
+        "pad-number": [
+          "100",
+          "90"
+        ]
+      },
+      "QEP1_B": {
+        "pad-number": [
+          "100",
+          "52",
+          "61",
+          "84",
+          "66"
+        ]
+      },
+      "SD1_C3": {
+        "pad-number": [
+          "100",
+          "53",
+          "49",
+          "66"
+        ]
+      },
+      "QEP2_INDEX": {
+        "pad-number": [
+          "100",
+          "58",
+          "66"
+        ]
+      },
+      "LINA_RX": {
+        "pad-number": [
+          "100",
+          "53",
+          "63",
+          "81",
+          "94",
+          "92"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPIB_STE",
+        "pad-number": [
+          "100",
+          "53",
+          "81",
+          "49",
+          "59",
+          "95",
+          "92"
+        ]
+      },
+      "ERRORSTS": {
+        "pad-number": [
+          "100",
+          "1",
+          "56"
+        ]
+      },
+      "TRACE_D0": {
+        "actual": "TRACED0",
+        "pad-number": [
+          "100",
+          "54"
+        ]
+      },
+      "UART0_RX": {
+        "actual": "UARTA_RX",
+        "pad-number": [
+          "1",
+          "55",
+          "63",
+          "76",
+          "90",
+          "57",
+          "94"
+        ]
+      },
+      "PWM7_A": {
+        "pad-number": [
+          "1",
+          "51"
+        ]
+      },
+      "OUTPUTXBAR5": {
+        "pad-number": [
+          "1",
+          "84"
+        ]
+      },
+      "SD1_D3": {
+        "pad-number": [
+          "1",
+          "64",
+          "65"
+        ]
+      },
+      "QEP2_STROBE": {
+        "pad-number": [
+          "1",
+          "75",
+          "59",
+          "65"
+        ]
+      },
+      "LINA_TX": {
+        "pad-number": [
+          "1",
+          "61",
+          "64",
+          "83",
+          "67"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPIB_CLK",
+        "pad-number": [
+          "1",
+          "64",
+          "75",
+          "83",
+          "58",
+          "96",
+          "67"
+        ]
+      },
+      "TRACE_CLK": {
+        "actual": "TRACECLK",
+        "pad-number": [
+          "1",
+          "56"
+        ]
+      },
+      "C6": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_HP0": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_LP0": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "AIO226": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "VDAC": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_HP3": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_HN0": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_LP3": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_LN0": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "AIO242": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "B6": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP1_HP0": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP1_LP0": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "AIO224": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "C9": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP4_HP4": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP4_LP4": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "AIO251": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP1_HP1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP1_HN1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP1_LP1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP1_LN1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "AIO237": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP3_HP1": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP3_HN1": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP3_LP1": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP3_LN1": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "AIO244": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "DAC1_OUT": {
+        "actual": "DACB_OUT",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "AIO232": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "B15": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "C15": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "DAC0_OUT": {
+        "actual": "DACA_OUT",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "AIO231": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP2_HP1": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP2_HN1": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP2_LP1": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP2_LN1": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "AIO238": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP4_HP1": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "COMP4_HN1": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "COMP4_LP1": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "COMP4_LN1": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "COMP4_HP2": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "COMP4_LP2": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "AIO245": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "C11": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "COMP7_HP4": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "COMP7_LP4": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "AIO254": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "B8": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "COMP2_HP0": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "COMP2_LP0": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "AIO225": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "C8": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "COMP4_HP0": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "COMP4_LP0": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "AIO227": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "B1": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "C10": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "COMP7_HP0": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "COMP7_LP0": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "AIO230": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CANB_RX",
+        "pad-number": [
+          "50",
+          "55",
+          "84",
+          "93",
+          "91",
+          "92"
+        ]
+      },
+      "QEP1_INDEX": {
+        "pad-number": [
+          "50",
+          "55",
+          "81",
+          "90",
+          "99",
+          "49",
+          "92"
+        ]
+      },
+      "UART1_RX": {
+        "actual": "UARTB_RX",
+        "pad-number": [
+          "50",
+          "52",
+          "81",
+          "49",
+          "95",
+          "66"
+        ]
+      },
+      "PMBUSA_ALERT": {
+        "pad-number": [
+          "50",
+          "61",
+          "59"
+        ]
+      },
+      "QSPI_CS": {
+        "actual": "QSPI_SS_N",
+        "pad-number": [
+          "50",
+          "53",
+          "84"
+        ]
+      },
+      "SPI0_MISO": {
+        "actual": "SPIA_SOMI",
+        "pad-number": [
+          "50",
+          "55",
+          "78",
+          "93"
+        ]
+      },
+      "CAN0_TX": {
+        "actual": "CANA_TX",
+        "pad-number": [
+          "50",
+          "55",
+          "61",
+          "64",
+          "75",
+          "77",
+          "99"
+        ]
+      },
+      "TRACE_D3": {
+        "actual": "TRACED3",
+        "pad-number": [
+          "50"
+        ]
+      },
+      "QEP1_STROBE": {
+        "pad-number": [
+          "51",
+          "54",
+          "74",
+          "83",
+          "98",
+          "67"
+        ]
+      },
+      "UART1_TX": {
+        "actual": "UARTB_TX",
+        "pad-number": [
+          "51",
+          "68",
+          "83",
+          "90",
+          "93",
+          "48",
+          "96",
+          "65",
+          "85"
+        ]
+      },
+      "PMBUSA_CTL": {
+        "pad-number": [
+          "51",
+          "63",
+          "68",
+          "58",
+          "94"
+        ]
+      },
+      "SPI0_SCK": {
+        "actual": "SPIA_CLK",
+        "pad-number": [
+          "51",
+          "68",
+          "76",
+          "90",
+          "65"
+        ]
+      },
+      "CAN0_RX": {
+        "actual": "CANA_RX",
+        "pad-number": [
+          "51",
+          "53",
+          "63",
+          "68",
+          "76",
+          "89",
+          "98",
+          "94"
+        ]
+      },
+      "TRACE_D2": {
+        "actual": "TRACED2",
+        "pad-number": [
+          "51",
+          "99"
+        ]
+      },
+      "PWM6_B": {
+        "pad-number": [
+          "52"
+        ]
+      },
+      "OUTPUTXBAR7": {
+        "pad-number": [
+          "52",
+          "54",
+          "98"
+        ]
+      },
+      "SPI0_CS": {
+        "actual": "SPIA_STE",
+        "pad-number": [
+          "52",
+          "79",
+          "89",
+          "66"
+        ]
+      },
+      "QSPI_IO1": {
+        "actual": "QSPI_IO1",
+        "pad-number": [
+          "52",
+          "79",
+          "89",
+          "99"
+        ]
+      },
+      "QEP2_A": {
+        "pad-number": [
+          "52",
+          "56",
+          "68",
+          "48",
+          "96"
+        ]
+      },
+      "SPI0_MOSI": {
+        "actual": "SPIA_SIMO",
+        "pad-number": [
+          "52",
+          "54",
+          "74",
+          "77",
+          "48"
+        ]
+      },
+      "I2C0_SCL": {
+        "actual": "I2CA_SCL",
+        "pad-number": [
+          "53",
+          "61",
+          "68",
+          "74",
+          "78",
+          "59"
+        ]
+      },
+      "QEP2_B": {
+        "pad-number": [
+          "53",
+          "54",
+          "57",
+          "95"
+        ]
+      },
+      "ADC_SOCAO": {
+        "actual": "ADCSOCAO",
+        "pad-number": [
+          "53",
+          "74"
+        ]
+      },
+      "TRACE_D1": {
+        "actual": "TRACED1",
+        "pad-number": [
+          "53",
+          "98"
+        ]
+      },
+      "PWM5_A": {
+        "pad-number": [
+          "54",
+          "74"
+        ]
+      },
+      "SD1_D1": {
+        "pad-number": [
+          "54",
+          "56"
+        ]
+      },
+      "PMBUSA_SCL": {
+        "pad-number": [
+          "54",
+          "56",
+          "63",
+          "76",
+          "94",
+          "95"
+        ]
+      },
+      "XCLKOUT": {
+        "pad-number": [
+          "54",
+          "68"
+        ]
+      },
+      "OUTPUTXBAR8": {
+        "pad-number": [
+          "55",
+          "99"
+        ]
+      },
+      "PWM5_B": {
+        "pad-number": [
+          "55",
+          "90"
+        ]
+      },
+      "SD1_C1": {
+        "pad-number": [
+          "55",
+          "57"
+        ]
+      },
+      "PMBUSA_SDA": {
+        "pad-number": [
+          "55",
+          "77",
+          "57",
+          "94",
+          "96",
+          "85"
+        ]
+      },
+      "TRGIO": {
+        "pad-number": [
+          "55",
+          "64"
+        ]
+      },
+      "OUTPUTXBAR1": {
+        "pad-number": [
+          "56",
+          "77",
+          "94",
+          "67"
+        ]
+      },
+      "PWM8_A": {
+        "pad-number": [
+          "56",
+          "96"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPIB_SIMO",
+        "pad-number": [
+          "56",
+          "81",
+          "84",
+          "98",
+          "65"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "60"
+        ]
+      },
+      "OUTPUTXBAR2": {
+        "pad-number": [
+          "61",
+          "76",
+          "57",
+          "92"
+        ]
+      },
+      "TDO": {
+        "pad-number": [
+          "61"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "62"
+        ]
+      },
+      "I2C0_SDA": {
+        "actual": "I2CA_SDA",
+        "pad-number": [
+          "63",
+          "64",
+          "79",
+          "81",
+          "93",
+          "58",
+          "94"
+        ]
+      },
+      "TDI": {
+        "pad-number": [
+          "63",
+          "94"
+        ]
+      },
+      "PWM8_B": {
+        "pad-number": [
+          "64",
+          "95"
+        ]
+      },
+      "ADC_SOCBO": {
+        "actual": "ADCSOCBO",
+        "pad-number": [
+          "64",
+          "93"
+        ]
+      },
+      "PWM6_A": {
+        "pad-number": [
+          "68",
+          "93"
+        ]
+      },
+      "SD1_D2": {
+        "pad-number": [
+          "68",
+          "58"
+        ]
+      },
+      "X2": {
+        "pad-number": [
+          "68"
+        ]
+      },
+      "QSPI_IO3": {
+        "actual": "QSPI_IO3",
+        "pad-number": [
+          "74",
+          "77",
+          "98",
+          "57",
+          "91"
+        ]
+      },
+      "PWM3_A": {
+        "pad-number": [
+          "75",
+          "96"
+        ]
+      },
+      "OUTPUTXBAR3": {
+        "pad-number": [
+          "75",
+          "89",
+          "58",
+          "96"
+        ]
+      },
+      "QSPI_SCK": {
+        "actual": "QSPI_SCLK",
+        "pad-number": [
+          "75",
+          "93",
+          "59"
+        ]
+      },
+      "PWM2_B": {
+        "pad-number": [
+          "76"
+        ]
+      },
+      "QSPI_IO2": {
+        "actual": "QSPI_IO2",
+        "pad-number": [
+          "76",
+          "90",
+          "58",
+          "85"
+        ]
+      },
+      "PWM2_A": {
+        "pad-number": [
+          "77"
+        ]
+      },
+      "PWM1_B": {
+        "pad-number": [
+          "78",
+          "99"
+        ]
+      },
+      "PWM1_A": {
+        "pad-number": [
+          "79",
+          "98"
+        ]
+      },
+      "PWM4_B": {
+        "pad-number": [
+          "81",
+          "84"
+        ]
+      },
+      "SD1_C4": {
+        "pad-number": [
+          "81",
+          "99",
+          "92"
+        ]
+      },
+      "SD1_D4": {
+        "pad-number": [
+          "83",
+          "98",
+          "48",
+          "67"
+        ]
+      },
+      "PWM3_B": {
+        "pad-number": [
+          "89",
+          "95"
+        ]
+      },
+      "COMP5_HP0": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "COMP5_LP0": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "AIO228": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "COMP5_HP1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP5_HN1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP5_LP1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP5_LN1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "AIO239": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP1_HP3": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_HN0": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_LP3": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_LN0": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "AIO233": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP6_HP4": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP6_LP4": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "AIO253": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP5_HP4": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP5_LP4": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP5_HP2": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP5_LP2": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "AIO252": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "B7": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP1_HP4": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP1_LP4": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP1_HP2": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP1_LP2": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "AIO248": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "SD1_C2": {
+        "pad-number": [
+          "59"
+        ]
+      },
+      "GPIO35_TDI": {
+        "pad-number": [
+          "94"
+        ]
+      },
+      "C7": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP3_HP4": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP3_LP4": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "AIO250": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP5_HP3": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP5_HN0": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP5_LP3": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP5_LN0": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP3_HP2": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP3_LP2": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "AIO235": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP6_HP1": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP6_HN1": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP6_LP1": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP6_LN1": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP6_HP2": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP6_LP2": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "AIO240": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "B9": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP2_HP4": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP2_LP4": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP2_HP2": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP2_LP2": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "AIO249": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "COMP2_HP3": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "COMP2_HN0": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "COMP2_LP3": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "COMP2_LN0": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "AIO234": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "COMP6_HP0": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "COMP6_LP0": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "AIO229": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "COMP6_HP3": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "COMP6_HN0": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "COMP6_LP3": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "COMP6_LN0": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "AIO236": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "COMP7_HP3": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "COMP7_HN0": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "COMP7_LP3": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "COMP7_LN0": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "AIO241": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "COMP4_HP3": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "COMP4_HN0": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "COMP4_LP3": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "COMP4_LN0": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "AIO243": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "COMP7_HP2": {
+        "pad-number": [
+          "43"
+        ]
+      },
+      "COMP7_LP2": {
+        "pad-number": [
+          "43"
+        ]
+      },
+      "AIO247": {
+        "pad-number": [
+          "43"
+        ]
+      },
+      "COMP7_HP1": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "COMP7_HN1": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "COMP7_LP1": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "COMP7_LN1": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "AIO246": {
+        "pad-number": [
+          "44"
+        ]
+      }
+    }
+  },
+  "LQFP80": {
+    "pin_map": {
+      "80": "GPIO6",
+      "3": "GPIO29",
+      "4": "GPIO28",
+      "5": "XRSn",
+      "8": "VDD_1",
+      "11": "B2",
+      "12": "A2",
+      "17": "C2",
+      "18": "A1",
+      "19": "A0",
+      "20": "VREFHIB_C",
+      "21": "VREFLOB_C",
+      "22": "C1",
+      "23": "C3",
+      "24": "B12",
+      "25": "VSSA_1",
+      "26": "VDDA_1",
+      "27": "A4",
+      "28": "B4",
+      "29": "A10",
+      "31": "VDD_2",
+      "7": "VDDIO_1",
+      "35": "GPIO13",
+      "36": "GPIO12",
+      "37": "GPIO11",
+      "38": "GPIO33",
+      "39": "GPIO16",
+      "40": "GPIO17",
+      "41": "GPIO24",
+      "45": "TCK",
+      "46": "GPIO37_TDO",
+      "47": "TMS",
+      "48": "GPIO35_TDI",
+      "49": "GPIO32",
+      "50": "GPIO18_X2",
+      "51": "X1",
+      "32": "VDDIO_2",
+      "53": "VDD_3",
+      "58": "GPIO8",
+      "59": "GPIO4",
+      "60": "GPIO3",
+      "61": "GPIO2",
+      "62": "GPIO1",
+      "63": "GPIO0",
+      "72": "VDDIO_3",
+      "65": "GPIO23",
+      "67": "GPIO22",
+      "68": "GPIO7",
+      "71": "VDD_4",
+      "52": "VDDIO_4",
+      "74": "GPIO5",
+      "75": "GPIO9",
+      "9": "VSS_1",
+      "10": "A6",
+      "30": "VSS_2",
+      "55": "VSS_3",
+      "70": "VSS_4",
+      "76": "GPIO10",
+      "1": "GPIO30",
+      "2": "GPIO31",
+      "6": "GPIO46",
+      "13": "A3",
+      "14": "A15",
+      "15": "A14",
+      "16": "A11",
+      "33": "GPIO54",
+      "34": "GPIO53",
+      "42": "GPIO25",
+      "43": "GPIO26",
+      "44": "GPIO27",
+      "54": "GPIO43",
+      "56": "GPIO49",
+      "57": "GPIO42",
+      "64": "GPIO47",
+      "66": "GPIO41",
+      "69": "GPIO44",
+      "73": "GPIO45",
+      "77": "GPIO34",
+      "78": "GPIO15",
+      "79": "GPIO14"
+    },
+    "peripheral_table": {
+      "PWM4_A": {
+        "pad-number": [
+          "80",
+          "67"
+        ]
+      },
+      "OUTPUTXBAR4": {
+        "pad-number": [
+          "80",
+          "38",
+          "44",
+          "56",
+          "78"
+        ]
+      },
+      "SYNCOUT": {
+        "pad-number": [
+          "80",
+          "56"
+        ]
+      },
+      "QEP1_A": {
+        "pad-number": [
+          "80",
+          "4",
+          "48",
+          "76",
+          "42",
+          "64",
+          "69",
+          "77"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CANB_TX",
+        "pad-number": [
+          "80",
+          "36",
+          "39",
+          "58"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPIB_SOMI",
+        "pad-number": [
+          "80",
+          "39",
+          "2",
+          "42",
+          "66"
+        ]
+      },
+      "QSPI_IO0": {
+        "actual": "QSPI_IO0",
+        "pad-number": [
+          "80",
+          "36",
+          "49",
+          "73"
+        ]
+      },
+      "UART0_TX": {
+        "actual": "UARTA_TX",
+        "pad-number": [
+          "3",
+          "39",
+          "41",
+          "46",
+          "58",
+          "61"
+        ]
+      },
+      "PWM7_B": {
+        "pad-number": [
+          "3",
+          "35"
+        ]
+      },
+      "OUTPUTXBAR6": {
+        "pad-number": [
+          "3",
+          "75",
+          "54"
+        ]
+      },
+      "QEP1_B": {
+        "pad-number": [
+          "3",
+          "37",
+          "46",
+          "68",
+          "66"
+        ]
+      },
+      "SD1_C3": {
+        "pad-number": [
+          "3",
+          "38",
+          "34"
+        ]
+      },
+      "QEP2_INDEX": {
+        "pad-number": [
+          "3",
+          "43",
+          "56"
+        ]
+      },
+      "LINA_RX": {
+        "pad-number": [
+          "3",
+          "38",
+          "48",
+          "65",
+          "57",
+          "64",
+          "77"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPIB_STE",
+        "pad-number": [
+          "3",
+          "38",
+          "65",
+          "34",
+          "44",
+          "66",
+          "78"
+        ]
+      },
+      "ERRORSTS": {
+        "pad-number": [
+          "3",
+          "4",
+          "41"
+        ]
+      },
+      "TRACE_D0": {
+        "actual": "TRACED0",
+        "pad-number": [
+          "3",
+          "39"
+        ]
+      },
+      "UART0_RX": {
+        "actual": "UARTA_RX",
+        "pad-number": [
+          "4",
+          "40",
+          "48",
+          "60",
+          "75",
+          "42",
+          "56",
+          "77"
+        ]
+      },
+      "PWM7_A": {
+        "pad-number": [
+          "4",
+          "36"
+        ]
+      },
+      "OUTPUTXBAR5": {
+        "pad-number": [
+          "4",
+          "68",
+          "57"
+        ]
+      },
+      "SD1_D3": {
+        "pad-number": [
+          "4",
+          "49"
+        ]
+      },
+      "QEP2_STROBE": {
+        "pad-number": [
+          "4",
+          "59",
+          "44"
+        ]
+      },
+      "LINA_TX": {
+        "pad-number": [
+          "4",
+          "46",
+          "49",
+          "67",
+          "6"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPIB_CLK",
+        "pad-number": [
+          "4",
+          "49",
+          "59",
+          "67",
+          "43",
+          "79"
+        ]
+      },
+      "TRACE_CLK": {
+        "actual": "TRACECLK",
+        "pad-number": [
+          "4",
+          "41"
+        ]
+      },
+      "C6": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP3_HP0": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP3_LP0": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "AIO226": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "B6": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP1_HP0": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP1_LP0": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "AIO224": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP3_HP1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP3_HN1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP3_LP1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP3_LN1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "AIO244": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "DAC1_OUT": {
+        "actual": "DACB_OUT",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "AIO232": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "B15": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "C15": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "DAC0_OUT": {
+        "actual": "DACA_OUT",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "AIO231": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP2_HP1": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "COMP2_HN1": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "COMP2_LP1": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "COMP2_LN1": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "AIO238": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "COMP4_HP1": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP4_HN1": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP4_LP1": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP4_LN1": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP4_HP2": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP4_LP2": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "AIO245": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "C11": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "COMP7_HP4": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "COMP7_LP4": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "AIO254": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "B8": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "COMP2_HP0": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "COMP2_LP0": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "AIO225": {
+        "pad-number": [
+          "27"
+        ]
+      },
+      "C8": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP4_HP0": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "COMP4_LP0": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "AIO227": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "B1": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "C10": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP7_HP0": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "COMP7_LP0": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "AIO230": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CANB_RX",
+        "pad-number": [
+          "35",
+          "40",
+          "68",
+          "76",
+          "56"
+        ]
+      },
+      "QEP1_INDEX": {
+        "pad-number": [
+          "35",
+          "40",
+          "65",
+          "75",
+          "2",
+          "34",
+          "54",
+          "56"
+        ]
+      },
+      "UART1_RX": {
+        "actual": "UARTB_RX",
+        "pad-number": [
+          "35",
+          "37",
+          "65",
+          "34",
+          "54",
+          "66",
+          "78"
+        ]
+      },
+      "PMBUSA_ALERT": {
+        "pad-number": [
+          "35",
+          "46",
+          "44",
+          "54"
+        ]
+      },
+      "QSPI_CS": {
+        "actual": "QSPI_SS_N",
+        "pad-number": [
+          "35",
+          "38",
+          "68",
+          "6"
+        ]
+      },
+      "SPI0_MISO": {
+        "actual": "SPIA_SOMI",
+        "pad-number": [
+          "35",
+          "40",
+          "62",
+          "76"
+        ]
+      },
+      "CAN0_TX": {
+        "actual": "CANA_TX",
+        "pad-number": [
+          "35",
+          "40",
+          "46",
+          "49",
+          "59",
+          "61",
+          "2"
+        ]
+      },
+      "TRACE_D3": {
+        "actual": "TRACED3",
+        "pad-number": [
+          "35"
+        ]
+      },
+      "QEP1_STROBE": {
+        "pad-number": [
+          "36",
+          "39",
+          "58",
+          "67",
+          "1",
+          "57"
+        ]
+      },
+      "UART1_TX": {
+        "actual": "UARTB_TX",
+        "pad-number": [
+          "36",
+          "50",
+          "67",
+          "75",
+          "76",
+          "33",
+          "57",
+          "79"
+        ]
+      },
+      "PMBUSA_CTL": {
+        "pad-number": [
+          "36",
+          "48",
+          "50",
+          "43",
+          "57",
+          "77"
+        ]
+      },
+      "SPI0_SCK": {
+        "actual": "SPIA_CLK",
+        "pad-number": [
+          "36",
+          "50",
+          "60",
+          "75"
+        ]
+      },
+      "CAN0_RX": {
+        "actual": "CANA_RX",
+        "pad-number": [
+          "36",
+          "38",
+          "48",
+          "50",
+          "60",
+          "74",
+          "1",
+          "77"
+        ]
+      },
+      "TRACE_D2": {
+        "actual": "TRACED2",
+        "pad-number": [
+          "36",
+          "2"
+        ]
+      },
+      "PWM6_B": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "OUTPUTXBAR7": {
+        "pad-number": [
+          "37",
+          "39",
+          "1",
+          "69"
+        ]
+      },
+      "SPI0_CS": {
+        "actual": "SPIA_STE",
+        "pad-number": [
+          "37",
+          "63",
+          "74"
+        ]
+      },
+      "QSPI_IO1": {
+        "actual": "QSPI_IO1",
+        "pad-number": [
+          "37",
+          "63",
+          "74",
+          "2"
+        ]
+      },
+      "QEP2_A": {
+        "pad-number": [
+          "37",
+          "41",
+          "50",
+          "33",
+          "79"
+        ]
+      },
+      "SPI0_MOSI": {
+        "actual": "SPIA_SIMO",
+        "pad-number": [
+          "37",
+          "39",
+          "58",
+          "61",
+          "33"
+        ]
+      },
+      "I2C0_SCL": {
+        "actual": "I2CA_SCL",
+        "pad-number": [
+          "38",
+          "46",
+          "50",
+          "58",
+          "62",
+          "44",
+          "54"
+        ]
+      },
+      "QEP2_B": {
+        "pad-number": [
+          "38",
+          "39",
+          "42",
+          "78"
+        ]
+      },
+      "ADC_SOCAO": {
+        "actual": "ADCSOCAO",
+        "pad-number": [
+          "38",
+          "58"
+        ]
+      },
+      "TRACE_D1": {
+        "actual": "TRACED1",
+        "pad-number": [
+          "38",
+          "1"
+        ]
+      },
+      "PWM5_A": {
+        "pad-number": [
+          "39",
+          "58"
+        ]
+      },
+      "SD1_D1": {
+        "pad-number": [
+          "39",
+          "41"
+        ]
+      },
+      "PMBUSA_SCL": {
+        "pad-number": [
+          "39",
+          "41",
+          "48",
+          "60",
+          "66",
+          "77",
+          "78"
+        ]
+      },
+      "XCLKOUT": {
+        "pad-number": [
+          "39",
+          "50"
+        ]
+      },
+      "OUTPUTXBAR8": {
+        "pad-number": [
+          "40",
+          "2",
+          "73"
+        ]
+      },
+      "PWM5_B": {
+        "pad-number": [
+          "40",
+          "75"
+        ]
+      },
+      "SD1_C1": {
+        "pad-number": [
+          "40",
+          "42",
+          "56"
+        ]
+      },
+      "PMBUSA_SDA": {
+        "pad-number": [
+          "40",
+          "61",
+          "42",
+          "64",
+          "77",
+          "79"
+        ]
+      },
+      "TRGIO": {
+        "pad-number": [
+          "40",
+          "49"
+        ]
+      },
+      "OUTPUTXBAR1": {
+        "pad-number": [
+          "41",
+          "61",
+          "77"
+        ]
+      },
+      "PWM8_A": {
+        "pad-number": [
+          "41",
+          "79"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPIB_SIMO",
+        "pad-number": [
+          "41",
+          "65",
+          "68",
+          "1",
+          "64"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "45"
+        ]
+      },
+      "OUTPUTXBAR2": {
+        "pad-number": [
+          "46",
+          "60",
+          "42"
+        ]
+      },
+      "TDO": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "47"
+        ]
+      },
+      "I2C0_SDA": {
+        "actual": "I2CA_SDA",
+        "pad-number": [
+          "48",
+          "49",
+          "63",
+          "65",
+          "76",
+          "43",
+          "57",
+          "77"
+        ]
+      },
+      "TDI": {
+        "pad-number": [
+          "48",
+          "77"
+        ]
+      },
+      "PWM8_B": {
+        "pad-number": [
+          "49",
+          "78"
+        ]
+      },
+      "ADC_SOCBO": {
+        "actual": "ADCSOCBO",
+        "pad-number": [
+          "49",
+          "76"
+        ]
+      },
+      "PWM6_A": {
+        "pad-number": [
+          "50",
+          "76"
+        ]
+      },
+      "SD1_D2": {
+        "pad-number": [
+          "50",
+          "43"
+        ]
+      },
+      "X2": {
+        "pad-number": [
+          "50"
+        ]
+      },
+      "QSPI_IO3": {
+        "actual": "QSPI_IO3",
+        "pad-number": [
+          "58",
+          "61",
+          "1",
+          "42"
+        ]
+      },
+      "PWM3_A": {
+        "pad-number": [
+          "59",
+          "79"
+        ]
+      },
+      "OUTPUTXBAR3": {
+        "pad-number": [
+          "59",
+          "74",
+          "43",
+          "79"
+        ]
+      },
+      "QSPI_SCK": {
+        "actual": "QSPI_SCLK",
+        "pad-number": [
+          "59",
+          "76",
+          "44",
+          "66"
+        ]
+      },
+      "PWM2_B": {
+        "pad-number": [
+          "60",
+          "64"
+        ]
+      },
+      "QSPI_IO2": {
+        "actual": "QSPI_IO2",
+        "pad-number": [
+          "60",
+          "75",
+          "43",
+          "69"
+        ]
+      },
+      "PWM2_A": {
+        "pad-number": [
+          "61",
+          "66"
+        ]
+      },
+      "PWM1_B": {
+        "pad-number": [
+          "62",
+          "2"
+        ]
+      },
+      "PWM1_A": {
+        "pad-number": [
+          "63",
+          "1"
+        ]
+      },
+      "PWM4_B": {
+        "pad-number": [
+          "65",
+          "68"
+        ]
+      },
+      "SD1_C4": {
+        "pad-number": [
+          "65",
+          "2"
+        ]
+      },
+      "SD1_D4": {
+        "pad-number": [
+          "67",
+          "1",
+          "33"
+        ]
+      },
+      "PWM3_B": {
+        "pad-number": [
+          "74",
+          "78"
+        ]
+      },
+      "COMP5_HP0": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP5_LP0": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "AIO228": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_HP3": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP1_HN0": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP1_LP3": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP1_LN0": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "AIO233": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP6_HP4": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP6_LP4": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "AIO253": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "COMP5_HP4": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP5_LP4": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP5_HP2": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP5_LP2": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "AIO252": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "B7": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP1_HP4": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP1_LP4": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP1_HP2": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP1_LP2": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "AIO248": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "SD1_C2": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "GPIO35_TDI": {
+        "pad-number": [
+          "77"
+        ]
+      }
+    }
+  },
+  "LQFP64": {
+    "pin_map": {
+      "64": "GPIO6",
+      "1": "GPIO29",
+      "2": "GPIO28",
+      "3": "XRSn",
+      "4": "VDD_1",
+      "7": "B2",
+      "8": "B3",
+      "9": "A2",
+      "10": "B11",
+      "12": "C0",
+      "13": "C2",
+      "14": "A1",
+      "15": "A0",
+      "16": "VREFHIB_C",
+      "17": "VREFLOB_C",
+      "18": "C1",
+      "19": "C3",
+      "20": "B12",
+      "21": "VSSA_1",
+      "22": "VDDA_1",
+      "23": "A4",
+      "24": "B4",
+      "25": "A10",
+      "27": "VDD_2",
+      "28": "VDDIO_1",
+      "29": "GPIO13",
+      "30": "GPIO12",
+      "31": "GPIO11",
+      "32": "GPIO33",
+      "33": "GPIO16",
+      "34": "GPIO17",
+      "35": "GPIO24",
+      "36": "TCK",
+      "37": "GPIO37_TDO",
+      "38": "TMS",
+      "39": "GPIO35_TDI",
+      "40": "GPIO32",
+      "41": "GPIO18_X2",
+      "42": "X1",
+      "43": "VDDIO_2",
+      "44": "VDD_3",
+      "47": "GPIO8",
+      "48": "GPIO4",
+      "49": "GPIO3",
+      "50": "GPIO2",
+      "51": "GPIO1",
+      "52": "GPIO0",
+      "53": "VDDIO_3",
+      "54": "GPIO23",
+      "55": "VSSIO",
+      "56": "GPIO22",
+      "57": "GPIO7",
+      "59": "VDD_4",
+      "60": "VDDIO_4",
+      "61": "GPIO5",
+      "62": "GPIO9",
+      "5": "VSS_1",
+      "6": "A6",
+      "11": "C4",
+      "26": "VSS_2",
+      "45": "VSS_3",
+      "46": "VREGENZ",
+      "58": "VSS_4",
+      "63": "GPIO10"
+    },
+    "peripheral_table": {
+      "PWM4_A": {
+        "pad-number": [
+          "64",
+          "56"
+        ]
+      },
+      "OUTPUTXBAR4": {
+        "pad-number": [
+          "64",
+          "32"
+        ]
+      },
+      "SYNCOUT": {
+        "pad-number": [
+          "64"
+        ]
+      },
+      "QEP1_A": {
+        "pad-number": [
+          "64",
+          "2",
+          "39",
+          "63"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CANB_TX",
+        "pad-number": [
+          "64",
+          "30",
+          "33",
+          "47"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPIB_SOMI",
+        "pad-number": [
+          "64",
+          "33"
+        ]
+      },
+      "QSPI_IO0": {
+        "actual": "QSPI_IO0",
+        "pad-number": [
+          "64",
+          "30",
+          "40"
+        ]
+      },
+      "UART0_TX": {
+        "actual": "UARTA_TX",
+        "pad-number": [
+          "1",
+          "33",
+          "35",
+          "37",
+          "47",
+          "50"
+        ]
+      },
+      "PWM7_B": {
+        "pad-number": [
+          "1",
+          "29"
+        ]
+      },
+      "OUTPUTXBAR6": {
+        "pad-number": [
+          "1",
+          "62"
+        ]
+      },
+      "QEP1_B": {
+        "pad-number": [
+          "1",
+          "31",
+          "37",
+          "57"
+        ]
+      },
+      "SD1_C3": {
+        "pad-number": [
+          "1",
+          "32"
+        ]
+      },
+      "QEP2_INDEX": {
+        "pad-number": [
+          "1"
+        ]
+      },
+      "LINA_RX": {
+        "pad-number": [
+          "1",
+          "32",
+          "39",
+          "54"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPIB_STE",
+        "pad-number": [
+          "1",
+          "32",
+          "54"
+        ]
+      },
+      "ERRORSTS": {
+        "pad-number": [
+          "1",
+          "2",
+          "35"
+        ]
+      },
+      "TRACE_D0": {
+        "actual": "TRACED0",
+        "pad-number": [
+          "1",
+          "33"
+        ]
+      },
+      "UART0_RX": {
+        "actual": "UARTA_RX",
+        "pad-number": [
+          "2",
+          "34",
+          "39",
+          "49",
+          "62"
+        ]
+      },
+      "PWM7_A": {
+        "pad-number": [
+          "2",
+          "30"
+        ]
+      },
+      "OUTPUTXBAR5": {
+        "pad-number": [
+          "2",
+          "57"
+        ]
+      },
+      "SD1_D3": {
+        "pad-number": [
+          "2",
+          "40"
+        ]
+      },
+      "QEP2_STROBE": {
+        "pad-number": [
+          "2",
+          "48"
+        ]
+      },
+      "LINA_TX": {
+        "pad-number": [
+          "2",
+          "37",
+          "40",
+          "56"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPIB_CLK",
+        "pad-number": [
+          "2",
+          "40",
+          "48",
+          "56"
+        ]
+      },
+      "TRACE_CLK": {
+        "actual": "TRACECLK",
+        "pad-number": [
+          "2",
+          "35"
+        ]
+      },
+      "C6": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_HP0": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_LP0": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "AIO226": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "VDAC": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_HP3": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_HN0": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_LP3": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP3_LN0": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "AIO242": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "B6": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP1_HP0": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP1_LP0": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "AIO224": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "C9": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP4_HP4": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP4_LP4": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "AIO251": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_HP1": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP1_HN1": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP1_LP1": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP1_LN1": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "AIO237": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "COMP3_HP1": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP3_HN1": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP3_LP1": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP3_LN1": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "AIO244": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "DAC1_OUT": {
+        "actual": "DACB_OUT",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "AIO232": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "B15": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "C15": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "DAC0_OUT": {
+        "actual": "DACA_OUT",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "AIO231": {
+        "pad-number": [
+          "15"
+        ]
+      },
+      "COMP2_HP1": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP2_HN1": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP2_LP1": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP2_LN1": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "AIO238": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP4_HP1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP4_HN1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP4_LP1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP4_LN1": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP4_HP2": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "COMP4_LP2": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "AIO245": {
+        "pad-number": [
+          "19"
+        ]
+      },
+      "C11": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP7_HP4": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "COMP7_LP4": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "AIO254": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "B8": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP2_HP0": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP2_LP0": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "AIO225": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "C8": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "COMP4_HP0": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "COMP4_LP0": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "AIO227": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "B1": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "C10": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "COMP7_HP0": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "COMP7_LP0": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "AIO230": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CANB_RX",
+        "pad-number": [
+          "29",
+          "34",
+          "57",
+          "63"
+        ]
+      },
+      "QEP1_INDEX": {
+        "pad-number": [
+          "29",
+          "34",
+          "54",
+          "62"
+        ]
+      },
+      "UART1_RX": {
+        "actual": "UARTB_RX",
+        "pad-number": [
+          "29",
+          "31",
+          "54"
+        ]
+      },
+      "PMBUSA_ALERT": {
+        "pad-number": [
+          "29",
+          "37"
+        ]
+      },
+      "QSPI_CS": {
+        "actual": "QSPI_SS_N",
+        "pad-number": [
+          "29",
+          "32",
+          "57"
+        ]
+      },
+      "SPI0_MISO": {
+        "actual": "SPIA_SOMI",
+        "pad-number": [
+          "29",
+          "34",
+          "51",
+          "63"
+        ]
+      },
+      "CAN0_TX": {
+        "actual": "CANA_TX",
+        "pad-number": [
+          "29",
+          "34",
+          "37",
+          "40",
+          "48",
+          "50"
+        ]
+      },
+      "TRACE_D3": {
+        "actual": "TRACED3",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "QEP1_STROBE": {
+        "pad-number": [
+          "30",
+          "33",
+          "47",
+          "56"
+        ]
+      },
+      "UART1_TX": {
+        "actual": "UARTB_TX",
+        "pad-number": [
+          "30",
+          "41",
+          "56",
+          "62",
+          "63"
+        ]
+      },
+      "PMBUSA_CTL": {
+        "pad-number": [
+          "30",
+          "39",
+          "41"
+        ]
+      },
+      "SPI0_SCK": {
+        "actual": "SPIA_CLK",
+        "pad-number": [
+          "30",
+          "41",
+          "49",
+          "62"
+        ]
+      },
+      "CAN0_RX": {
+        "actual": "CANA_RX",
+        "pad-number": [
+          "30",
+          "32",
+          "39",
+          "41",
+          "49",
+          "61"
+        ]
+      },
+      "TRACE_D2": {
+        "actual": "TRACED2",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "PWM6_B": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "OUTPUTXBAR7": {
+        "pad-number": [
+          "31",
+          "33"
+        ]
+      },
+      "SPI0_CS": {
+        "actual": "SPIA_STE",
+        "pad-number": [
+          "31",
+          "52",
+          "61"
+        ]
+      },
+      "QSPI_IO1": {
+        "actual": "QSPI_IO1",
+        "pad-number": [
+          "31",
+          "52",
+          "61"
+        ]
+      },
+      "QEP2_A": {
+        "pad-number": [
+          "31",
+          "35",
+          "41"
+        ]
+      },
+      "SPI0_MOSI": {
+        "actual": "SPIA_SIMO",
+        "pad-number": [
+          "31",
+          "33",
+          "47",
+          "50"
+        ]
+      },
+      "I2C0_SCL": {
+        "actual": "I2CA_SCL",
+        "pad-number": [
+          "32",
+          "37",
+          "41",
+          "47",
+          "51"
+        ]
+      },
+      "QEP2_B": {
+        "pad-number": [
+          "32",
+          "33"
+        ]
+      },
+      "ADC_SOCAO": {
+        "actual": "ADCSOCAO",
+        "pad-number": [
+          "32",
+          "47"
+        ]
+      },
+      "TRACE_D1": {
+        "actual": "TRACED1",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "PWM5_A": {
+        "pad-number": [
+          "33",
+          "47"
+        ]
+      },
+      "SD1_D1": {
+        "pad-number": [
+          "33",
+          "35"
+        ]
+      },
+      "PMBUSA_SCL": {
+        "pad-number": [
+          "33",
+          "35",
+          "39",
+          "49"
+        ]
+      },
+      "XCLKOUT": {
+        "pad-number": [
+          "33",
+          "41"
+        ]
+      },
+      "OUTPUTXBAR8": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "PWM5_B": {
+        "pad-number": [
+          "34",
+          "62"
+        ]
+      },
+      "SD1_C1": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "PMBUSA_SDA": {
+        "pad-number": [
+          "34",
+          "50"
+        ]
+      },
+      "TRGIO": {
+        "pad-number": [
+          "34",
+          "40"
+        ]
+      },
+      "OUTPUTXBAR1": {
+        "pad-number": [
+          "35",
+          "50"
+        ]
+      },
+      "PWM8_A": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPIB_SIMO",
+        "pad-number": [
+          "35",
+          "54",
+          "57"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "OUTPUTXBAR2": {
+        "pad-number": [
+          "37",
+          "49"
+        ]
+      },
+      "TDO": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "I2C0_SDA": {
+        "actual": "I2CA_SDA",
+        "pad-number": [
+          "39",
+          "40",
+          "52",
+          "54",
+          "63"
+        ]
+      },
+      "TDI": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "PWM8_B": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "ADC_SOCBO": {
+        "actual": "ADCSOCBO",
+        "pad-number": [
+          "40",
+          "63"
+        ]
+      },
+      "PWM6_A": {
+        "pad-number": [
+          "41",
+          "63"
+        ]
+      },
+      "SD1_D2": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "X2": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "QSPI_IO3": {
+        "actual": "QSPI_IO3",
+        "pad-number": [
+          "47",
+          "50"
+        ]
+      },
+      "PWM3_A": {
+        "pad-number": [
+          "48"
+        ]
+      },
+      "OUTPUTXBAR3": {
+        "pad-number": [
+          "48",
+          "61"
+        ]
+      },
+      "QSPI_SCK": {
+        "actual": "QSPI_SCLK",
+        "pad-number": [
+          "48",
+          "63"
+        ]
+      },
+      "PWM2_B": {
+        "pad-number": [
+          "49"
+        ]
+      },
+      "QSPI_IO2": {
+        "actual": "QSPI_IO2",
+        "pad-number": [
+          "49",
+          "62"
+        ]
+      },
+      "PWM2_A": {
+        "pad-number": [
+          "50"
+        ]
+      },
+      "PWM1_B": {
+        "pad-number": [
+          "51"
+        ]
+      },
+      "PWM1_A": {
+        "pad-number": [
+          "52"
+        ]
+      },
+      "PWM4_B": {
+        "pad-number": [
+          "54",
+          "57"
+        ]
+      },
+      "SD1_C4": {
+        "pad-number": [
+          "54"
+        ]
+      },
+      "SD1_D4": {
+        "pad-number": [
+          "56"
+        ]
+      },
+      "PWM3_B": {
+        "pad-number": [
+          "61"
+        ]
+      },
+      "COMP5_HP0": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "COMP5_LP0": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "AIO228": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "COMP5_HP1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP5_HN1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP5_LP1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP5_LN1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "AIO239": {
+        "pad-number": [
+          "11"
+        ]
+      }
+    }
+  },
+  "QFN56": {
+    "pin_map": {
+      "1": "GPIO6",
+      "2": "GPIO29",
+      "3": "GPIO28",
+      "4": "XRSn",
+      "5": "VDD_1",
+      "6": "B2",
+      "7": "B3",
+      "8": "A2",
+      "9": "B11",
+      "10": "C0",
+      "11": "C2",
+      "12": "A1",
+      "13": "A0",
+      "14": "VREFHIB_C",
+      "15": "VREFLOB_C",
+      "16": "C1",
+      "17": "C3",
+      "18": "B12",
+      "19": "VSSA_1",
+      "20": "VDDA_1",
+      "21": "A4",
+      "22": "B4",
+      "23": "A10",
+      "24": "VDD_2",
+      "25": "VDDIO_1",
+      "26": "GPIO13",
+      "27": "GPIO12",
+      "28": "GPIO11",
+      "29": "GPIO33",
+      "30": "GPIO16",
+      "31": "GPIO17",
+      "32": "GPIO24",
+      "33": "TCK",
+      "34": "GPIO37_TDO",
+      "35": "TMS",
+      "36": "GPIO35_TDI",
+      "37": "GPIO32",
+      "38": "GPIO18_X2",
+      "39": "X1",
+      "40": "VDDIO_2",
+      "41": "VDD_3",
+      "42": "GPIO8",
+      "43": "GPIO4",
+      "44": "GPIO3",
+      "45": "GPIO2",
+      "46": "GPIO1",
+      "47": "GPIO0",
+      "48": "VDDIO_3",
+      "49": "GPIO23",
+      "50": "VSSIO",
+      "51": "GPIO22",
+      "52": "GPIO7",
+      "53": "VDD_4",
+      "54": "VDDIO_4",
+      "55": "GPIO5",
+      "56": "GPIO9"
+    },
+    "peripheral_table": {
+      "PWM4_A": {
+        "pad-number": [
+          "1",
+          "51"
+        ]
+      },
+      "OUTPUTXBAR4": {
+        "pad-number": [
+          "1",
+          "29"
+        ]
+      },
+      "SYNCOUT": {
+        "pad-number": [
+          "1"
+        ]
+      },
+      "QEP1_A": {
+        "pad-number": [
+          "1",
+          "3",
+          "36"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CANB_TX",
+        "pad-number": [
+          "1",
+          "27",
+          "30",
+          "42"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPIB_SOMI",
+        "pad-number": [
+          "1",
+          "30"
+        ]
+      },
+      "QSPI_IO0": {
+        "actual": "QSPI_IO0",
+        "pad-number": [
+          "1",
+          "27",
+          "37"
+        ]
+      },
+      "UART0_TX": {
+        "actual": "UARTA_TX",
+        "pad-number": [
+          "2",
+          "30",
+          "32",
+          "34",
+          "42",
+          "45"
+        ]
+      },
+      "PWM7_B": {
+        "pad-number": [
+          "2",
+          "26"
+        ]
+      },
+      "OUTPUTXBAR6": {
+        "pad-number": [
+          "2",
+          "56"
+        ]
+      },
+      "QEP1_B": {
+        "pad-number": [
+          "2",
+          "28",
+          "34",
+          "52"
+        ]
+      },
+      "SD1_C3": {
+        "pad-number": [
+          "2",
+          "29"
+        ]
+      },
+      "QEP2_INDEX": {
+        "pad-number": [
+          "2"
+        ]
+      },
+      "LINA_RX": {
+        "pad-number": [
+          "2",
+          "29",
+          "36",
+          "49"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPIB_STE",
+        "pad-number": [
+          "2",
+          "29",
+          "49"
+        ]
+      },
+      "ERRORSTS": {
+        "pad-number": [
+          "2",
+          "3",
+          "32"
+        ]
+      },
+      "TRACE_D0": {
+        "actual": "TRACED0",
+        "pad-number": [
+          "2",
+          "30"
+        ]
+      },
+      "UART0_RX": {
+        "actual": "UARTA_RX",
+        "pad-number": [
+          "3",
+          "31",
+          "36",
+          "44",
+          "56"
+        ]
+      },
+      "PWM7_A": {
+        "pad-number": [
+          "3",
+          "27"
+        ]
+      },
+      "OUTPUTXBAR5": {
+        "pad-number": [
+          "3",
+          "52"
+        ]
+      },
+      "SD1_D3": {
+        "pad-number": [
+          "3",
+          "37"
+        ]
+      },
+      "QEP2_STROBE": {
+        "pad-number": [
+          "3",
+          "43"
+        ]
+      },
+      "LINA_TX": {
+        "pad-number": [
+          "3",
+          "34",
+          "37",
+          "51"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPIB_CLK",
+        "pad-number": [
+          "3",
+          "37",
+          "43",
+          "51"
+        ]
+      },
+      "TRACE_CLK": {
+        "actual": "TRACECLK",
+        "pad-number": [
+          "3",
+          "32"
+        ]
+      },
+      "C6": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "COMP3_HP0": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "COMP3_LP0": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "AIO226": {
+        "pad-number": [
+          "6"
+        ]
+      },
+      "VDAC": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_HP3": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_HN0": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_LP3": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "COMP3_LN0": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "AIO242": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "B6": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP1_HP0": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "COMP1_LP0": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "AIO224": {
+        "pad-number": [
+          "8"
+        ]
+      },
+      "C9": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP4_HP4": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP4_LP4": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "AIO251": {
+        "pad-number": [
+          "9"
+        ]
+      },
+      "COMP1_HP1": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_HN1": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_LP1": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP1_LN1": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "AIO237": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "COMP3_HP1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP3_HN1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP3_LP1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "COMP3_LN1": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "AIO244": {
+        "pad-number": [
+          "11"
+        ]
+      },
+      "DAC1_OUT": {
+        "actual": "DACB_OUT",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "AIO232": {
+        "pad-number": [
+          "12"
+        ]
+      },
+      "B15": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "C15": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "DAC0_OUT": {
+        "actual": "DACA_OUT",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "AIO231": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "COMP2_HP1": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP2_HN1": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP2_LP1": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP2_LN1": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "AIO238": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "COMP4_HP1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP4_HN1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP4_LP1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP4_LN1": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP4_HP2": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "COMP4_LP2": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "AIO245": {
+        "pad-number": [
+          "17"
+        ]
+      },
+      "C11": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP7_HP4": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "COMP7_LP4": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "AIO254": {
+        "pad-number": [
+          "18"
+        ]
+      },
+      "B8": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP2_HP0": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "COMP2_LP0": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "AIO225": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "C8": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "COMP4_HP0": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "COMP4_LP0": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "AIO227": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "B1": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "C10": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP7_HP0": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "COMP7_LP0": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "AIO230": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CANB_RX",
+        "pad-number": [
+          "26",
+          "31",
+          "52"
+        ]
+      },
+      "QEP1_INDEX": {
+        "pad-number": [
+          "26",
+          "31",
+          "49",
+          "56"
+        ]
+      },
+      "UART1_RX": {
+        "actual": "UARTB_RX",
+        "pad-number": [
+          "26",
+          "28",
+          "49"
+        ]
+      },
+      "PMBUSA_ALERT": {
+        "pad-number": [
+          "26",
+          "34"
+        ]
+      },
+      "QSPI_CS": {
+        "actual": "QSPI_SS_N",
+        "pad-number": [
+          "26",
+          "29",
+          "52"
+        ]
+      },
+      "SPI0_MISO": {
+        "actual": "SPIA_SOMI",
+        "pad-number": [
+          "26",
+          "31",
+          "46"
+        ]
+      },
+      "CAN0_TX": {
+        "actual": "CANA_TX",
+        "pad-number": [
+          "26",
+          "31",
+          "34",
+          "37",
+          "43",
+          "45"
+        ]
+      },
+      "TRACE_D3": {
+        "actual": "TRACED3",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "QEP1_STROBE": {
+        "pad-number": [
+          "27",
+          "30",
+          "42",
+          "51"
+        ]
+      },
+      "UART1_TX": {
+        "actual": "UARTB_TX",
+        "pad-number": [
+          "27",
+          "38",
+          "51",
+          "56"
+        ]
+      },
+      "PMBUSA_CTL": {
+        "pad-number": [
+          "27",
+          "36",
+          "38"
+        ]
+      },
+      "SPI0_SCK": {
+        "actual": "SPIA_CLK",
+        "pad-number": [
+          "27",
+          "38",
+          "44",
+          "56"
+        ]
+      },
+      "CAN0_RX": {
+        "actual": "CANA_RX",
+        "pad-number": [
+          "27",
+          "29",
+          "36",
+          "38",
+          "44",
+          "55"
+        ]
+      },
+      "TRACE_D2": {
+        "actual": "TRACED2",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "PWM6_B": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "OUTPUTXBAR7": {
+        "pad-number": [
+          "28",
+          "30"
+        ]
+      },
+      "SPI0_CS": {
+        "actual": "SPIA_STE",
+        "pad-number": [
+          "28",
+          "47",
+          "55"
+        ]
+      },
+      "QSPI_IO1": {
+        "actual": "QSPI_IO1",
+        "pad-number": [
+          "28",
+          "47",
+          "55"
+        ]
+      },
+      "QEP2_A": {
+        "pad-number": [
+          "28",
+          "32",
+          "38"
+        ]
+      },
+      "SPI0_MOSI": {
+        "actual": "SPIA_SIMO",
+        "pad-number": [
+          "28",
+          "30",
+          "42",
+          "45"
+        ]
+      },
+      "I2C0_SCL": {
+        "actual": "I2CA_SCL",
+        "pad-number": [
+          "29",
+          "34",
+          "38",
+          "42",
+          "46"
+        ]
+      },
+      "QEP2_B": {
+        "pad-number": [
+          "29",
+          "30"
+        ]
+      },
+      "ADC_SOCAO": {
+        "actual": "ADCSOCAO",
+        "pad-number": [
+          "29",
+          "42"
+        ]
+      },
+      "TRACE_D1": {
+        "actual": "TRACED1",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "PWM5_A": {
+        "pad-number": [
+          "30",
+          "42"
+        ]
+      },
+      "SD1_D1": {
+        "pad-number": [
+          "30",
+          "32"
+        ]
+      },
+      "PMBUSA_SCL": {
+        "pad-number": [
+          "30",
+          "32",
+          "36",
+          "44"
+        ]
+      },
+      "XCLKOUT": {
+        "pad-number": [
+          "30",
+          "38"
+        ]
+      },
+      "OUTPUTXBAR8": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "PWM5_B": {
+        "pad-number": [
+          "31",
+          "56"
+        ]
+      },
+      "SD1_C1": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "PMBUSA_SDA": {
+        "pad-number": [
+          "31",
+          "45"
+        ]
+      },
+      "TRGIO": {
+        "pad-number": [
+          "31",
+          "37"
+        ]
+      },
+      "OUTPUTXBAR1": {
+        "pad-number": [
+          "32",
+          "45"
+        ]
+      },
+      "PWM8_A": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPIB_SIMO",
+        "pad-number": [
+          "32",
+          "49",
+          "52"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "OUTPUTXBAR2": {
+        "pad-number": [
+          "34",
+          "44"
+        ]
+      },
+      "TDO": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "35"
+        ]
+      },
+      "I2C0_SDA": {
+        "actual": "I2CA_SDA",
+        "pad-number": [
+          "36",
+          "37",
+          "47",
+          "49"
+        ]
+      },
+      "TDI": {
+        "pad-number": [
+          "36"
+        ]
+      },
+      "PWM8_B": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "ADC_SOCBO": {
+        "actual": "ADCSOCBO",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "PWM6_A": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "SD1_D2": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "X2": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "QSPI_IO3": {
+        "actual": "QSPI_IO3",
+        "pad-number": [
+          "42",
+          "45"
+        ]
+      },
+      "PWM3_A": {
+        "pad-number": [
+          "43"
+        ]
+      },
+      "OUTPUTXBAR3": {
+        "pad-number": [
+          "43",
+          "55"
+        ]
+      },
+      "QSPI_SCK": {
+        "actual": "QSPI_SCLK",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "PWM2_B": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "QSPI_IO2": {
+        "actual": "QSPI_IO2",
+        "pad-number": [
+          "44",
+          "56"
+        ]
+      },
+      "PWM2_A": {
+        "pad-number": [
+          "45"
+        ]
+      },
+      "PWM1_B": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "PWM1_A": {
+        "pad-number": [
+          "47"
+        ]
+      },
+      "PWM4_B": {
+        "pad-number": [
+          "49",
+          "52"
+        ]
+      },
+      "SD1_C4": {
+        "pad-number": [
+          "49"
+        ]
+      },
+      "SD1_D4": {
+        "pad-number": [
+          "51"
+        ]
+      },
+      "PWM3_B": {
+        "pad-number": [
+          "55"
+        ]
+      }
+    }
+  }
+}

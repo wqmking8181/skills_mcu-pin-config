@@ -1,0 +1,365 @@
+{
+  "CAN": {
+    "default": [
+      "RX",
+      "TX"
+    ]
+  },
+  "DMC": {
+    "default": [
+      "A0",
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "BA0",
+      "BA1",
+      "CAS",
+      "CKE",
+      "CLK/CK",
+      "CS",
+      "DQ0",
+      "DQ1",
+      "DQ2",
+      "DQ3",
+      "DQ4",
+      "DQ5",
+      "DQ6",
+      "DQ7",
+      "DQ8",
+      "DQ9",
+      "DQ10",
+      "DQ11",
+      "DQ12",
+      "DQ13",
+      "DQ14",
+      "DQ15",
+      "LDQM",
+      "RAS",
+      "UDQM",
+      "WE"
+    ]
+  },
+  "ETH": {
+    "force_": [
+      "ETH_MDC",
+      "ETH_MDIO"
+    ],
+    "MII, full-duplex": [
+      "MII_RX_CLK",
+      "MII_RX_DV",
+      "MII_RX_ER",
+      "MII_RXD0",
+      "MII_RXD1",
+      "MII_RXD2",
+      "MII_RXD3",
+      "MII_TX_CLK",
+      "MII_TX_EN",
+      "MII_TXD0",
+      "MII_TXD1",
+      "MII_TXD2",
+      "MII_TXD3"
+    ],
+    "MII, half-duplex": [
+      "MII_COL",
+      "MII_CRS",
+      "MII_RX_CLK",
+      "MII_RX_DV",
+      "MII_RX_ER",
+      "MII_RXD0",
+      "MII_RXD1",
+      "MII_RXD2",
+      "MII_RXD3",
+      "MII_TX_CLK",
+      "MII_TX_EN",
+      "MII_TXD0",
+      "MII_TXD1",
+      "MII_TXD2",
+      "MII_TXD3"
+    ],
+    "RMII": [
+      "RMII_CRS_DV",
+      "RMII_REF_CLK",
+      "RMII_RXD0",
+      "RMII_RXD1",
+      "RMII_TX_EN",
+      "RMII_TXD0",
+      "RMII_TXD1"
+    ]
+  },
+  "I2C": {
+    "default": [
+      "SCL",
+      "SDA"
+    ],
+    "SMBus": [
+      "SCL",
+      "SDA",
+      "SMBA"
+    ],
+    "SMBus with alarm": [
+      "SCL",
+      "SDA",
+      "SMBA"
+    ]
+  },
+  "JTAG": {
+    "default": [
+      "JTCK",
+      "JTDI",
+      "JTDO",
+      "JTMS",
+      "NJTRST"
+    ],
+    "without NJTRST": [
+      "JTCK",
+      "JTDI",
+      "JTDO",
+      "JTMS",
+      "NJTRST"
+    ]
+  },
+  "SWD": {
+    "default": [
+      "SWDIO",
+      "SWCLK"
+    ],
+    "with SWO": [
+      "SWDIO",
+      "SWCLK",
+      "SWO"
+    ]
+  },
+  "MCO": {
+    "default": [
+      "MCO",
+      "MCO2"
+    ]
+  },
+  "OTG-FS": {
+    "default": [
+      "DM",
+      "DP"
+    ],
+    "full": [
+      "DM",
+      "DP",
+      "ID",
+      "SOF"
+    ]
+  },
+  "QSPI": {
+    "default": [
+      "CS",
+      "IO0",
+      "IO1",
+      "IO2",
+      "IO3",
+      "SCK"
+    ]
+  },
+  "SDIO": {
+    "default": [
+      "CK",
+      "CMD",
+      "D0",
+      "D1",
+      "D2",
+      "D3"
+    ],
+    "SD, 1-bit": [
+      "CK",
+      "CMD",
+      "D0"
+    ],
+    "SD, 4-bit": [
+      "CK",
+      "CMD",
+      "D0",
+      "D1",
+      "D2",
+      "D3"
+    ],
+    "MMC, 1-bit": [
+      "CK",
+      "CMD",
+      "D0"
+    ],
+    "MMC, 4-bit": [
+      "CK",
+      "CMD",
+      "D0",
+      "D1",
+      "D2",
+      "D3"
+    ],
+    "MMC, 8-bit": [
+      "CK",
+      "CMD",
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7"
+    ]
+  },
+  "SMC": {
+    "default": [
+      "A0",
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A17",
+      "A18",
+      "A19",
+      "A20",
+      "A21",
+      "A22",
+      "A23",
+      "A24",
+      "A25",
+      "ALE",
+      "CD",
+      "CLE",
+      "CLK",
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "INT2",
+      "INT3",
+      "INTR",
+      "NBL0",
+      "NBL1",
+      "NCE2",
+      "NCE3",
+      "NCE4",
+      "NE1",
+      "NE2",
+      "NE3",
+      "NE4",
+      "NIORD",
+      "NIOWR",
+      "NL",
+      "NOE",
+      "NREG",
+      "NWAIT",
+      "NWE"
+    ]
+  },
+  "SPI": {
+    "default": [
+      "MISO",
+      "MOSI",
+      "SCK"
+    ],
+    "with NSS": [
+      "MISO",
+      "MOSI",
+      "NSS",
+      "SCK"
+    ],
+    "DO only": [
+      "MISO",
+      "MOSI",
+      "SCK"
+    ],
+    "DO only, with NSS": [
+      "MISO",
+      "MOSI",
+      "NSS",
+      "SCK"
+    ]
+  },
+  "TMR": {
+    "default": [
+      "BKIN",
+      "CH1",
+      "CH1N",
+      "CH2",
+      "CH2N",
+      "CH3",
+      "CH3N",
+      "CH4",
+      "ETR"
+    ]
+  },
+  "TRACE": {
+    "default": [
+      "CK",
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "SWO"
+    ]
+  },
+  "UART": {
+    "default": [
+      "RX",
+      "TX"
+    ]
+  },
+  "USART": {
+    "default": [
+      "RX",
+      "TX"
+    ],
+    "hw flow-ctrl": [
+      "CTS",
+      "RTS",
+      "RX",
+      "TX"
+    ]
+  },
+  "I2S":{
+    "default": [
+      "CK",
+      "WS",
+      "SD"
+    ],
+    "full-duplex": [
+      "CK",
+      "WS",
+      "SD",
+      "ext_SD"
+    ]
+  }
+}

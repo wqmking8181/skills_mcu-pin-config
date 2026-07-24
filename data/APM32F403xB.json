@@ -1,0 +1,2529 @@
+{
+  "QFN36": {
+    "pin_map": {
+      "2": "OSC_IN",
+      "3": "OSC_OUT",
+      "4": "NRST",
+      "5": "VSSA",
+      "6": "VDDA",
+      "7": "PA0",
+      "8": "PA1",
+      "9": "PA2",
+      "10": "PA3",
+      "11": "PA4",
+      "12": "PA5",
+      "13": "PA6",
+      "14": "PA7",
+      "15": "PB0",
+      "16": "PB1",
+      "17": "PB2-BOOT1",
+      "18": "VSS",
+      "19": "VDD",
+      "20": "PA8",
+      "21": "PA9",
+      "22": "PA10",
+      "23": "PA11",
+      "24": "PA12",
+      "25": "PA13",
+      "26": "VSS",
+      "27": "VDD",
+      "28": "PA14",
+      "29": "PA15",
+      "30": "PB3",
+      "31": "PB4",
+      "32": "PB5",
+      "33": "PB6",
+      "34": "PB7",
+      "35": "BOOT0",
+      "--": "PB9",
+      "36": "VSS",
+      "1": "VDD"
+    },
+    "peripheral_table": {
+      "WKUP": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "ADC12_IN0": {
+        "actual": "ADC12_IN0",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "TMR2_CH1_ET R": {
+        "pad-number": [
+          "7"
+        ]
+      },
+      "TMR5_CH1": {
+        "actual": "TMR5_CH1",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "TMR8_ETR": {
+        "actual": "TMR8_ETR",
+        "pad-number": [
+          "7"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "ADC12_IN1": {
+        "actual": "ADC12_IN1",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "TMR5_CH2": {
+        "actual": "TMR5_CH2",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "8",
+          "30"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "TMR5_CH3": {
+        "actual": "TMR5_CH3",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "ADC12_IN2": {
+        "actual": "ADC12_IN2",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR5_CH4": {
+        "actual": "TMR5_CH4",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "ADC12_IN3": {
+        "actual": "ADC12_IN3",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "11",
+          "29"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "ADC12_IN4": {
+        "actual": "ADC12_IN4",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "12",
+          "30"
+        ]
+      },
+      "ADC12_IN5": {
+        "actual": "ADC12_IN5",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "13",
+          "31"
+        ]
+      },
+      "TMR8_BKIN": {
+        "actual": "TMR8_BKIN",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "ADC12_IN6 TMR3_CH1": {
+        "pad-number": [
+          "13"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "14",
+          "32"
+        ]
+      },
+      "TMR8_CH1N": {
+        "actual": "TMR8_CH1N",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC12_IN7": {
+        "actual": "ADC12_IN7",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "14",
+          "32"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC12_IN8": {
+        "actual": "ADC12_IN8",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR8_CH2N": {
+        "actual": "TMR8_CH2N",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "ADC12_IN9": {
+        "actual": "ADC12_IN9",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR8_CH3N": {
+        "actual": "TMR8_CH3N",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "OTG_FS_SOF": {
+        "pad-number": [
+          "20"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "21",
+          "33"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "OTG_FS_VBUS": {
+        "pad-number": [
+          "21"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "22",
+          "34"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "OTG_FS_ID": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CAN1_RX",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "OTG_FS_DM": {
+        "pad-number": [
+          "23"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "24"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CAN1_TX",
+        "pad-number": [
+          "24",
+          "--"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "24"
+        ]
+      },
+      "OTG_FS_DP": {
+        "pad-number": [
+          "24"
+        ]
+      },
+      "JTMS": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "PA13": {
+        "pad-number": [
+          "25"
+        ]
+      },
+      "JTCK": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "PA14": {
+        "pad-number": [
+          "28"
+        ]
+      },
+      "JTDI": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "PA15": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "JTDO": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "PB3": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "TRACE_SWO": {
+        "actual": "TRACESWO",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "NJTRST": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "PB4": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "I2C1_SMBAI": {
+        "actual": "I2C1_SMBAI",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "CAN2_RX": {
+        "actual": "CAN2_RX",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "TMR4_CH1": {
+        "actual": "TMR4_CH1",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "CAN2_TX": {
+        "actual": "CAN2_TX",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "34",
+          "--"
+        ]
+      },
+      "TMR4_CH2": {
+        "actual": "TMR4_CH2",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "TMR4_CH4": {
+        "actual": "TMR4_CH4",
+        "pad-number": [
+          "--"
+        ]
+      }
+    }
+  },
+  "QFN48": {
+    "pin_map": {
+      "1": "VBAT",
+      "2": "PC13",
+      "3": "PC14-OSC32_IN",
+      "4": "PC15-OSC32_OUT",
+      "5": "OSC_IN",
+      "6": "OSC_OUT",
+      "7": "NRST",
+      "8": "VSSA",
+      "9": "VDDA",
+      "10": "PA0",
+      "11": "PA1",
+      "12": "PA2",
+      "13": "PA3",
+      "14": "PA4",
+      "15": "PA5",
+      "16": "PA6",
+      "17": "PA7",
+      "18": "PB0",
+      "19": "PB1",
+      "20": "PB2-BOOT1",
+      "21": "PB10",
+      "22": "PB11",
+      "23": "VSS",
+      "24": "VDD",
+      "25": "PB12",
+      "26": "PB13",
+      "27": "PB14",
+      "28": "PB15",
+      "29": "PA8",
+      "30": "PA9",
+      "31": "PA10",
+      "32": "PA11",
+      "33": "PA12",
+      "34": "PA13",
+      "35": "VSS",
+      "36": "VDD",
+      "37": "PA14",
+      "38": "PA15",
+      "39": "PB3",
+      "40": "PB4",
+      "41": "PB5",
+      "42": "PB6",
+      "43": "PB7",
+      "44": "BOOT0",
+      "45": "PB8",
+      "46": "PB9",
+      "47": "VSS",
+      "48": "VDD"
+    },
+    "peripheral_table": {
+      "TAMPER_RTC": {
+        "pad-number": [
+          "2"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "3"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "4"
+        ]
+      },
+      "WKUP": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "ADC12_IN0": {
+        "actual": "ADC12_IN0",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR2_CH1_ET R": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR5_CH1": {
+        "actual": "TMR5_CH1",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR8_ETR": {
+        "actual": "TMR8_ETR",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "ADC12_IN1": {
+        "actual": "ADC12_IN1",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "TMR5_CH2": {
+        "actual": "TMR5_CH2",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "11",
+          "39"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "TMR5_CH3": {
+        "actual": "TMR5_CH3",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "ADC12_IN2": {
+        "actual": "ADC12_IN2",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "12",
+          "21"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "TMR5_CH4": {
+        "actual": "TMR5_CH4",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "ADC12_IN3": {
+        "actual": "ADC12_IN3",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "13",
+          "22"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "14",
+          "38"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC12_IN4": {
+        "actual": "ADC12_IN4",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "15",
+          "39"
+        ]
+      },
+      "ADC12_IN5": {
+        "actual": "ADC12_IN5",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "16",
+          "40"
+        ]
+      },
+      "TMR8_BKIN": {
+        "actual": "TMR8_BKIN",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "ADC12_IN6 TMR3_CH1": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "16",
+          "25"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "TMR8_CH1N": {
+        "actual": "TMR8_CH1N",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "ADC12_IN7": {
+        "actual": "ADC12_IN7",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "17",
+          "26"
+        ]
+      },
+      "ADC12_IN8": {
+        "actual": "ADC12_IN8",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR8_CH2N": {
+        "actual": "TMR8_CH2N",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "18",
+          "27"
+        ]
+      },
+      "ADC12_IN9": {
+        "actual": "ADC12_IN9",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR8_CH3N": {
+        "actual": "TMR8_CH3N",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "19",
+          "28"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "CAN2_RX": {
+        "actual": "CAN2_RX",
+        "pad-number": [
+          "25",
+          "41"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "CAN2_TX": {
+        "actual": "CAN2_TX",
+        "pad-number": [
+          "26",
+          "42"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "OTG_FS_SOF": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "30",
+          "42"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "OTG_FS_VBUS": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "31",
+          "43"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "OTG_FS_ID": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CAN1_RX",
+        "pad-number": [
+          "32",
+          "45"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "OTG_FS_DM": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CAN1_TX",
+        "pad-number": [
+          "33",
+          "46"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "OTG_FS_DP": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "JTMS": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "PA13": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "JTCK": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "PA14": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "JTDI": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "PA15": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "JTDO": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "PB3": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "TRACE_SWO": {
+        "actual": "TRACESWO",
+        "pad-number": [
+          "39"
+        ]
+      },
+      "NJTRST": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "PB4": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "40"
+        ]
+      },
+      "I2C1_SMBAI": {
+        "actual": "I2C1_SMBAI",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "42",
+          "45"
+        ]
+      },
+      "TMR4_CH1": {
+        "actual": "TMR4_CH1",
+        "pad-number": [
+          "42"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "43",
+          "46"
+        ]
+      },
+      "TMR4_CH2": {
+        "actual": "TMR4_CH2",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "TMR4_CH3": {
+        "actual": "TMR4_CH3",
+        "pad-number": [
+          "45"
+        ]
+      },
+      "TMR4_CH4": {
+        "actual": "TMR4_CH4",
+        "pad-number": [
+          "46"
+        ]
+      }
+    }
+  },
+  "LQFP48": {
+    "pin_map": {
+      "1": "VBAT",
+      "2": "PC13",
+      "3": "PC14-OSC32_IN",
+      "4": "PC15-OSC32_OUT",
+      "5": "OSC_IN",
+      "6": "OSC_OUT",
+      "7": "NRST",
+      "8": "VSSA",
+      "9": "VDDA",
+      "10": "PA0",
+      "11": "PA1",
+      "12": "PA2",
+      "13": "PA3",
+      "14": "PA4",
+      "15": "PA5",
+      "16": "PA6",
+      "17": "PA7",
+      "18": "PB0",
+      "19": "PB1",
+      "20": "PB2-BOOT1",
+      "21": "PB10",
+      "22": "PB11",
+      "23": "VSS",
+      "24": "VDD",
+      "25": "PB12",
+      "26": "PB13",
+      "27": "PB14",
+      "28": "PB15",
+      "29": "PA8",
+      "30": "PA9",
+      "31": "PA10",
+      "32": "PA11",
+      "33": "PA12",
+      "34": "PA13",
+      "35": "VSS",
+      "36": "VDD",
+      "37": "PA14",
+      "38": "PA15",
+      "39": "PB3",
+      "40": "PB4",
+      "41": "PB5",
+      "42": "PB6",
+      "43": "PB7",
+      "44": "BOOT0",
+      "45": "PB8",
+      "46": "PB9",
+      "47": "VSS",
+      "48": "VDD"
+    },
+    "peripheral_table": {
+      "TAMPER_RTC": {
+        "pad-number": [
+          "2"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "3"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "4"
+        ]
+      },
+      "WKUP": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "ADC12_IN0": {
+        "actual": "ADC12_IN0",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR2_CH1_ET R": {
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR5_CH1": {
+        "actual": "TMR5_CH1",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "TMR8_ETR": {
+        "actual": "TMR8_ETR",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "ADC12_IN1": {
+        "actual": "ADC12_IN1",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "TMR5_CH2": {
+        "actual": "TMR5_CH2",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "11",
+          "39"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "TMR5_CH3": {
+        "actual": "TMR5_CH3",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "ADC12_IN2": {
+        "actual": "ADC12_IN2",
+        "pad-number": [
+          "12"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "12",
+          "21"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "TMR5_CH4": {
+        "actual": "TMR5_CH4",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "ADC12_IN3": {
+        "actual": "ADC12_IN3",
+        "pad-number": [
+          "13"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "13",
+          "22"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "14",
+          "38"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC12_IN4": {
+        "actual": "ADC12_IN4",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "15",
+          "39"
+        ]
+      },
+      "ADC12_IN5": {
+        "actual": "ADC12_IN5",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "16",
+          "40"
+        ]
+      },
+      "TMR8_BKIN": {
+        "actual": "TMR8_BKIN",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "ADC12_IN6 TMR3_CH1": {
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "16",
+          "25"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "TMR8_CH1N": {
+        "actual": "TMR8_CH1N",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "ADC12_IN7": {
+        "actual": "ADC12_IN7",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "17",
+          "41"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "17",
+          "26"
+        ]
+      },
+      "ADC12_IN8": {
+        "actual": "ADC12_IN8",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR8_CH2N": {
+        "actual": "TMR8_CH2N",
+        "pad-number": [
+          "18"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "18",
+          "27"
+        ]
+      },
+      "ADC12_IN9": {
+        "actual": "ADC12_IN9",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR8_CH3N": {
+        "actual": "TMR8_CH3N",
+        "pad-number": [
+          "19"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "19",
+          "28"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "CAN2_RX": {
+        "actual": "CAN2_RX",
+        "pad-number": [
+          "25",
+          "41"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "CAN2_TX": {
+        "actual": "CAN2_TX",
+        "pad-number": [
+          "26",
+          "42"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "28"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "29"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "OTG_FS_SOF": {
+        "pad-number": [
+          "29"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "30",
+          "42"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "30"
+        ]
+      },
+      "OTG_FS_VBUS": {
+        "pad-number": [
+          "30"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "31",
+          "43"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "31"
+        ]
+      },
+      "OTG_FS_ID": {
+        "pad-number": [
+          "31"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CAN1_RX",
+        "pad-number": [
+          "32",
+          "45"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "32"
+        ]
+      },
+      "OTG_FS_DM": {
+        "pad-number": [
+          "32"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CAN1_TX",
+        "pad-number": [
+          "33",
+          "46"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "OTG_FS_DP": {
+        "pad-number": [
+          "33"
+        ]
+      },
+      "JTMS": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "PA13": {
+        "pad-number": [
+          "34"
+        ]
+      },
+      "JTCK": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "PA14": {
+        "pad-number": [
+          "37"
+        ]
+      },
+      "JTDI": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "PA15": {
+        "pad-number": [
+          "38"
+        ]
+      },
+      "JTDO": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "PB3": {
+        "pad-number": [
+          "39"
+        ]
+      },
+      "TRACE_SWO": {
+        "actual": "TRACESWO",
+        "pad-number": [
+          "39"
+        ]
+      },
+      "NJTRST": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "PB4": {
+        "pad-number": [
+          "40"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "40"
+        ]
+      },
+      "I2C1_SMBAI": {
+        "actual": "I2C1_SMBAI",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "42",
+          "45"
+        ]
+      },
+      "TMR4_CH1": {
+        "actual": "TMR4_CH1",
+        "pad-number": [
+          "42"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "43",
+          "46"
+        ]
+      },
+      "TMR4_CH2": {
+        "actual": "TMR4_CH2",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "TMR4_CH3": {
+        "actual": "TMR4_CH3",
+        "pad-number": [
+          "45"
+        ]
+      },
+      "TMR4_CH4": {
+        "actual": "TMR4_CH4",
+        "pad-number": [
+          "46"
+        ]
+      }
+    }
+  },
+  "LQFP64": {
+    "pin_map": {
+      "1": "VBAT",
+      "2": "PC13",
+      "3": "PC14-OSC32_IN",
+      "4": "PC15-OSC32_OUT",
+      "5": "OSC_IN",
+      "6": "OSC_OUT",
+      "7": "NRST",
+      "8": "PC0",
+      "9": "PC1",
+      "10": "PC2",
+      "11": "PC3",
+      "12": "VSSA",
+      "13": "VDDA",
+      "14": "PA0",
+      "15": "PA1",
+      "16": "PA2",
+      "17": "PA3",
+      "18": "VSS",
+      "19": "VDD",
+      "20": "PA4",
+      "21": "PA5",
+      "22": "PA6",
+      "23": "PA7",
+      "24": "PC4",
+      "25": "PC5",
+      "26": "PB0",
+      "27": "PB1",
+      "28": "PB2-BOOT1",
+      "29": "PB10",
+      "30": "PB11",
+      "31": "VSS",
+      "32": "VDD",
+      "33": "PB12",
+      "34": "PB13",
+      "35": "PB14",
+      "36": "PB15",
+      "37": "PC6",
+      "38": "PC7",
+      "39": "PC8",
+      "40": "PC9",
+      "41": "PA8",
+      "42": "PA9",
+      "43": "PA10",
+      "44": "PA11",
+      "45": "PA12",
+      "46": "PA13",
+      "47": "VSS",
+      "48": "VDD",
+      "49": "PA14",
+      "50": "PA15",
+      "51": "PC10",
+      "52": "PC11",
+      "53": "PC12",
+      "54": "PD2",
+      "55": "PB3",
+      "56": "PB4",
+      "57": "PB5",
+      "58": "PB6",
+      "59": "PB7",
+      "60": "BOOT0",
+      "61": "PB8",
+      "62": "PB9",
+      "63": "VSS",
+      "64": "VDD"
+    },
+    "peripheral_table": {
+      "TAMPER_RTC": {
+        "pad-number": [
+          "2"
+        ]
+      },
+      "OSC32_IN": {
+        "actual": "OSC32_IN",
+        "pad-number": [
+          "3"
+        ]
+      },
+      "OSC32_OUT": {
+        "actual": "OSC32_OUT",
+        "pad-number": [
+          "4"
+        ]
+      },
+      "ADC12_IN10": {
+        "actual": "ADC12_IN10",
+        "pad-number": [
+          "8"
+        ]
+      },
+      "ADC12_IN11": {
+        "actual": "ADC12_IN11",
+        "pad-number": [
+          "9"
+        ]
+      },
+      "ADC12_IN12": {
+        "actual": "ADC12_IN12",
+        "pad-number": [
+          "10"
+        ]
+      },
+      "ADC12_IN13": {
+        "actual": "ADC12_IN13",
+        "pad-number": [
+          "11"
+        ]
+      },
+      "WKUP": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "USART2_CTS": {
+        "actual": "USART2_CTS",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "ADC12_IN0": {
+        "actual": "ADC12_IN0",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "TMR2_CH1_ET R": {
+        "pad-number": [
+          "14"
+        ]
+      },
+      "TMR5_CH1": {
+        "actual": "TMR5_CH1",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "TMR8_ETR": {
+        "actual": "TMR8_ETR",
+        "pad-number": [
+          "14"
+        ]
+      },
+      "USART2_RTS": {
+        "actual": "USART2_RTS",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "ADC12_IN1": {
+        "actual": "ADC12_IN1",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR5_CH2": {
+        "actual": "TMR5_CH2",
+        "pad-number": [
+          "15"
+        ]
+      },
+      "TMR2_CH2": {
+        "actual": "TMR2_CH2",
+        "pad-number": [
+          "15",
+          "55"
+        ]
+      },
+      "USART2_TX": {
+        "actual": "USART2_TX",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR5_CH3": {
+        "actual": "TMR5_CH3",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "ADC12_IN2": {
+        "actual": "ADC12_IN2",
+        "pad-number": [
+          "16"
+        ]
+      },
+      "TMR2_CH3": {
+        "actual": "TMR2_CH3",
+        "pad-number": [
+          "16",
+          "29"
+        ]
+      },
+      "USART2_RX": {
+        "actual": "USART2_RX",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "TMR5_CH4": {
+        "actual": "TMR5_CH4",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "ADC12_IN3": {
+        "actual": "ADC12_IN3",
+        "pad-number": [
+          "17"
+        ]
+      },
+      "TMR2_CH4": {
+        "actual": "TMR2_CH4",
+        "pad-number": [
+          "17",
+          "30"
+        ]
+      },
+      "SPI1_CS": {
+        "actual": "SPI1_NSS",
+        "pad-number": [
+          "20",
+          "50"
+        ]
+      },
+      "USART2_CK": {
+        "actual": "USART2_CK",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "ADC12_IN4": {
+        "actual": "ADC12_IN4",
+        "pad-number": [
+          "20"
+        ]
+      },
+      "SPI1_SCK": {
+        "actual": "SPI1_SCK",
+        "pad-number": [
+          "21",
+          "55"
+        ]
+      },
+      "ADC12_IN5": {
+        "actual": "ADC12_IN5",
+        "pad-number": [
+          "21"
+        ]
+      },
+      "SPI1_MISO": {
+        "actual": "SPI1_MISO",
+        "pad-number": [
+          "22",
+          "56"
+        ]
+      },
+      "TMR8_BKIN": {
+        "actual": "TMR8_BKIN",
+        "pad-number": [
+          "22"
+        ]
+      },
+      "ADC12_IN6 TMR3_CH1": {
+        "pad-number": [
+          "22"
+        ]
+      },
+      "TMR1_BKIN": {
+        "actual": "TMR1_BKIN",
+        "pad-number": [
+          "22",
+          "33"
+        ]
+      },
+      "SPI1_MOSI": {
+        "actual": "SPI1_MOSI",
+        "pad-number": [
+          "23",
+          "57"
+        ]
+      },
+      "TMR8_CH1N": {
+        "actual": "TMR8_CH1N",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "ADC12_IN7": {
+        "actual": "ADC12_IN7",
+        "pad-number": [
+          "23"
+        ]
+      },
+      "TMR3_CH2": {
+        "actual": "TMR3_CH2",
+        "pad-number": [
+          "23",
+          "38",
+          "57"
+        ]
+      },
+      "TMR1_CH1N": {
+        "actual": "TMR1_CH1N",
+        "pad-number": [
+          "23",
+          "34"
+        ]
+      },
+      "ADC12_IN14": {
+        "actual": "ADC12_IN14",
+        "pad-number": [
+          "24"
+        ]
+      },
+      "ADC12_IN15": {
+        "actual": "ADC12_IN15",
+        "pad-number": [
+          "25"
+        ]
+      },
+      "ADC12_IN8": {
+        "actual": "ADC12_IN8",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "TMR3_CH3": {
+        "actual": "TMR3_CH3",
+        "pad-number": [
+          "26",
+          "39"
+        ]
+      },
+      "TMR8_CH2N": {
+        "actual": "TMR8_CH2N",
+        "pad-number": [
+          "26"
+        ]
+      },
+      "TMR1_CH2N": {
+        "actual": "TMR1_CH2N",
+        "pad-number": [
+          "26",
+          "35"
+        ]
+      },
+      "ADC12_IN9": {
+        "actual": "ADC12_IN9",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "TMR3_CH4": {
+        "actual": "TMR3_CH4",
+        "pad-number": [
+          "27",
+          "40"
+        ]
+      },
+      "TMR8_CH3N": {
+        "actual": "TMR8_CH3N",
+        "pad-number": [
+          "27"
+        ]
+      },
+      "TMR1_CH3N": {
+        "actual": "TMR1_CH3N",
+        "pad-number": [
+          "27",
+          "36"
+        ]
+      },
+      "USART3_TX": {
+        "actual": "USART3_TX",
+        "pad-number": [
+          "29",
+          "51"
+        ]
+      },
+      "USART3_RX": {
+        "actual": "USART3_RX",
+        "pad-number": [
+          "30",
+          "52"
+        ]
+      },
+      "SPI2_CS": {
+        "actual": "SPI2_NSS",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "I2S2_WS": {
+        "actual": "I2S2_WS",
+        "pad-number": [
+          "33"
+        ]
+      },
+      "USART3_CK": {
+        "actual": "USART3_CK",
+        "pad-number": [
+          "33",
+          "53"
+        ]
+      },
+      "CAN2_RX": {
+        "actual": "CAN2_RX",
+        "pad-number": [
+          "33",
+          "57"
+        ]
+      },
+      "SPI2_SCK": {
+        "actual": "SPI2_SCK",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "I2S2_CK": {
+        "actual": "I2S2_CK",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "USART3_CTS": {
+        "actual": "USART3_CTS",
+        "pad-number": [
+          "34"
+        ]
+      },
+      "CAN2_TX": {
+        "actual": "CAN2_TX",
+        "pad-number": [
+          "34",
+          "58"
+        ]
+      },
+      "SPI2_MISO": {
+        "actual": "SPI2_MISO",
+        "pad-number": [
+          "35"
+        ]
+      },
+      "USART3_RTS": {
+        "actual": "USART3_RTS",
+        "pad-number": [
+          "35"
+        ]
+      },
+      "SPI2_MOSI": {
+        "actual": "SPI2_MOSI",
+        "pad-number": [
+          "36"
+        ]
+      },
+      "I2S2_SD": {
+        "actual": "I2S2_SD",
+        "pad-number": [
+          "36"
+        ]
+      },
+      "I2S2_MCK": {
+        "actual": "I2S2_MCK",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "TMR8_CH1": {
+        "actual": "TMR8_CH1",
+        "pad-number": [
+          "37"
+        ]
+      },
+      "TMR3_CH1": {
+        "actual": "TMR3_CH1",
+        "pad-number": [
+          "37",
+          "56"
+        ]
+      },
+      "TMR8_CH2": {
+        "actual": "TMR8_CH2",
+        "pad-number": [
+          "38"
+        ]
+      },
+      "TMR8_CH3": {
+        "actual": "TMR8_CH3",
+        "pad-number": [
+          "39"
+        ]
+      },
+      "TMR8_CH4": {
+        "actual": "TMR8_CH4",
+        "pad-number": [
+          "40"
+        ]
+      },
+      "USART1_CK": {
+        "actual": "USART1_CK",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "TMR1_CH1": {
+        "actual": "TMR1_CH1",
+        "pad-number": [
+          "41"
+        ]
+      },
+      "MCO": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "OTG_FS_SOF": {
+        "pad-number": [
+          "41"
+        ]
+      },
+      "USART1_TX": {
+        "actual": "USART1_TX",
+        "pad-number": [
+          "42",
+          "58"
+        ]
+      },
+      "TMR1_CH2": {
+        "actual": "TMR1_CH2",
+        "pad-number": [
+          "42"
+        ]
+      },
+      "OTG_FS_VBUS": {
+        "pad-number": [
+          "42"
+        ]
+      },
+      "USART1_RX": {
+        "actual": "USART1_RX",
+        "pad-number": [
+          "43",
+          "59"
+        ]
+      },
+      "TMR1_CH3": {
+        "actual": "TMR1_CH3",
+        "pad-number": [
+          "43"
+        ]
+      },
+      "OTG_FS_ID": {
+        "pad-number": [
+          "43"
+        ]
+      },
+      "USART1_CTS": {
+        "actual": "USART1_CTS",
+        "pad-number": [
+          "44"
+        ]
+      },
+      "CAN1_RX": {
+        "actual": "CAN1_RX",
+        "pad-number": [
+          "44",
+          "61"
+        ]
+      },
+      "TMR1_CH4": {
+        "actual": "TMR1_CH4",
+        "pad-number": [
+          "44"
+        ]
+      },
+      "OTG_FS_DM": {
+        "pad-number": [
+          "44"
+        ]
+      },
+      "USART1_RTS": {
+        "actual": "USART1_RTS",
+        "pad-number": [
+          "45"
+        ]
+      },
+      "CAN1_TX": {
+        "actual": "CAN1_TX",
+        "pad-number": [
+          "45",
+          "62"
+        ]
+      },
+      "TMR1_ETR": {
+        "actual": "TMR1_ETR",
+        "pad-number": [
+          "45"
+        ]
+      },
+      "OTG_FS_DP": {
+        "pad-number": [
+          "45"
+        ]
+      },
+      "JTMS": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "SWDIO": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "PA13": {
+        "pad-number": [
+          "46"
+        ]
+      },
+      "JTCK": {
+        "pad-number": [
+          "49"
+        ]
+      },
+      "SWCLK": {
+        "pad-number": [
+          "49"
+        ]
+      },
+      "PA14": {
+        "pad-number": [
+          "49"
+        ]
+      },
+      "JTDI": {
+        "pad-number": [
+          "50"
+        ]
+      },
+      "TMR2_CH1_ETR": {
+        "actual": "TMR2_CH1_ETR",
+        "pad-number": [
+          "50"
+        ]
+      },
+      "PA15": {
+        "pad-number": [
+          "50"
+        ]
+      },
+      "UART4_TX": {
+        "actual": "UART4_TX",
+        "pad-number": [
+          "51"
+        ]
+      },
+      "UART4_RX": {
+        "actual": "UART4_RX",
+        "pad-number": [
+          "52"
+        ]
+      },
+      "TMR3_ETR": {
+        "actual": "TMR3_ETR",
+        "pad-number": [
+          "54"
+        ]
+      },
+      "JTDO": {
+        "pad-number": [
+          "55"
+        ]
+      },
+      "PB3": {
+        "pad-number": [
+          "55"
+        ]
+      },
+      "TRACE_SWO": {
+        "actual": "TRACESWO",
+        "pad-number": [
+          "55"
+        ]
+      },
+      "NJTRST": {
+        "pad-number": [
+          "56"
+        ]
+      },
+      "PB4": {
+        "pad-number": [
+          "56"
+        ]
+      },
+      "I2C1_SMBAI": {
+        "actual": "I2C1_SMBAI",
+        "pad-number": [
+          "57"
+        ]
+      },
+      "I2C1_SCL": {
+        "actual": "I2C1_SCL",
+        "pad-number": [
+          "58",
+          "61"
+        ]
+      },
+      "TMR4_CH1": {
+        "actual": "TMR4_CH1",
+        "pad-number": [
+          "58"
+        ]
+      },
+      "I2C1_SDA": {
+        "actual": "I2C1_SDA",
+        "pad-number": [
+          "59",
+          "62"
+        ]
+      },
+      "TMR4_CH2": {
+        "actual": "TMR4_CH2",
+        "pad-number": [
+          "59"
+        ]
+      },
+      "TMR4_CH3": {
+        "actual": "TMR4_CH3",
+        "pad-number": [
+          "61"
+        ]
+      },
+      "TMR4_CH4": {
+        "actual": "TMR4_CH4",
+        "pad-number": [
+          "62"
+        ]
+      }
+    }
+  }
+}
