@@ -1,0 +1,49 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (e.g., v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+      title:
+        description: 'Release title'
+        required: true
+        default: 'Release'
+      body:
+        description: 'Release notes'
+        required: false
+        default: ''
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create release package
+        run: |
+          mkdir -p release
+          cp SKILL.md release/
+          cp -r data release/
+          cp -r scripts release/
+          cd release
+          zip -r ../mcu-pin-config-${{ github.event.inputs.tag }}.zip .
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag }}
+          name: ${{ github.event.inputs.title }} ${{ github.event.inputs.tag }}
+          body: ${{ github.event.inputs.body }}
+          draft: false
+          prerelease: false
+          files: |
+            mcu-pin-config-${{ github.event.inputs.tag }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
