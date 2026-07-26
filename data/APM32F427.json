@@ -151,7 +151,8 @@
           "11"
         ]
       },
-      "ETH_RMII_REF_C LK": {
+      "ETH_RMII_REF_CLK": {
+        "actual": "ETH_RMII_REF_CLK",
         "pad-number": [
           "11"
         ]
@@ -397,7 +398,8 @@
           "26"
         ]
       },
-      "ETH_RMII_CRS_D V": {
+      "ETH_RMII_CRS_DV": {
+        "actual": "ETH_RMII_CRS_DV",
         "pad-number": [
           "17"
         ]
@@ -1075,7 +1077,8 @@
           "11"
         ]
       },
-      "ETH_RMII_REF_C LK": {
+      "ETH_RMII_REF_CLK": {
+        "actual": "ETH_RMII_REF_CLK",
         "pad-number": [
           "11"
         ]
@@ -1321,7 +1324,8 @@
           "26"
         ]
       },
-      "ETH_RMII_CRS_D V": {
+      "ETH_RMII_CRS_DV": {
+        "actual": "ETH_RMII_CRS_DV",
         "pad-number": [
           "17"
         ]
@@ -2017,7 +2021,8 @@
           "52"
         ]
       },
-      "ETH_RMII_REF_C LK": {
+      "ETH_RMII_REF_CLK": {
+        "actual": "ETH_RMII_REF_CLK",
         "pad-number": [
           "15"
         ]
@@ -2267,7 +2272,8 @@
           "34"
         ]
       },
-      "ETH_RMII_CRS_D V": {
+      "ETH_RMII_CRS_DV": {
+        "actual": "ETH_RMII_CRS_DV",
         "pad-number": [
           "23"
         ]
@@ -2856,14 +2862,14 @@
           "11"
         ]
       },
-      "ETH_RMII_RX_D0": {
-        "actual": "ETH_RMII_RX_D0",
+      "ETH_RMII_RXD0": {
+        "actual": "ETH_RMII_RXD0",
         "pad-number": [
           "24"
         ]
       },
-      "ETH_MII_RX_D0": {
-        "actual": "ETH_MII_RX_D0",
+      "ETH_MII_RXD0": {
+        "actual": "ETH_MII_RXD0",
         "pad-number": [
           "24"
         ]
@@ -2873,14 +2879,14 @@
           "24"
         ]
       },
-      "ETH_RMII_RX_D1": {
-        "actual": "ETH_RMII_RX_D1",
+      "ETH_RMII_RXD1": {
+        "actual": "ETH_RMII_RXD1",
         "pad-number": [
           "25"
         ]
       },
-      "ETH_MII_RX_D1": {
-        "actual": "ETH_MII_RX_D1",
+      "ETH_MII_RXD1": {
+        "actual": "ETH_MII_RXD1",
         "pad-number": [
           "25"
         ]
@@ -3232,7 +3238,8 @@
           "79"
         ]
       },
-      "ETH_RMII_REF_C LK": {
+      "ETH_RMII_REF_CLK": {
+        "actual": "ETH_RMII_REF_CLK",
         "pad-number": [
           "24"
         ]
@@ -3490,7 +3497,8 @@
           "39"
         ]
       },
-      "ETH_RMII_CRS_D V": {
+      "ETH_RMII_CRS_DV": {
+        "actual": "ETH_RMII_CRS_DV",
         "pad-number": [
           "32"
         ]
@@ -4097,14 +4105,14 @@
           "18"
         ]
       },
-      "ETH_RMII_RX_D0": {
-        "actual": "ETH_RMII_RX_D0",
+      "ETH_RMII_RXD0": {
+        "actual": "ETH_RMII_RXD0",
         "pad-number": [
           "33"
         ]
       },
-      "ETH_MII_RX_D0": {
-        "actual": "ETH_MII_RX_D0",
+      "ETH_MII_RXD0": {
+        "actual": "ETH_MII_RXD0",
         "pad-number": [
           "33"
         ]
@@ -4114,14 +4122,14 @@
           "33"
         ]
       },
-      "ETH_RMII_RX_D1": {
-        "actual": "ETH_RMII_RX_D1",
+      "ETH_RMII_RXD1": {
+        "actual": "ETH_RMII_RXD1",
         "pad-number": [
           "34"
         ]
       },
-      "ETH_MII_RX_D1": {
-        "actual": "ETH_MII_RX_D1",
+      "ETH_MII_RXD1": {
+        "actual": "ETH_MII_RXD1",
         "pad-number": [
           "34"
         ]
@@ -4862,7 +4870,8 @@
           "112"
         ]
       },
-      "ETH_RMII_REF_C LK": {
+      "ETH_RMII_REF_CLK": {
+        "actual": "ETH_RMII_REF_CLK",
         "pad-number": [
           "35"
         ]
@@ -5123,7 +5132,8 @@
           "59"
         ]
       },
-      "ETH_RMII_CRS_D V": {
+      "ETH_RMII_CRS_DV": {
+        "actual": "ETH_RMII_CRS_DV",
         "pad-number": [
           "43"
         ]
@@ -5743,14 +5753,14 @@
           "29"
         ]
       },
-      "ETH_RMII_RX_D0": {
-        "actual": "ETH_RMII_RX_D0",
+      "ETH_RMII_RXD0": {
+        "actual": "ETH_RMII_RXD0",
         "pad-number": [
           "44"
         ]
       },
-      "ETH_MII_RX_D0": {
-        "actual": "ETH_MII_RX_D0",
+      "ETH_MII_RXD0": {
+        "actual": "ETH_MII_RXD0",
         "pad-number": [
           "44"
         ]
@@ -5760,14 +5770,14 @@
           "44"
         ]
       },
-      "ETH_RMII_RX_D1": {
-        "actual": "ETH_RMII_RX_D1",
+      "ETH_RMII_RXD1": {
+        "actual": "ETH_RMII_RXD1",
         "pad-number": [
           "45"
         ]
       },
-      "ETH_MII_RX_D1": {
-        "actual": "ETH_MII_RX_D1",
+      "ETH_MII_RXD1": {
+        "actual": "ETH_MII_RXD1",
         "pad-number": [
           "45"
         ]
@@ -6838,7 +6848,8 @@
           "C10"
         ]
       },
-      "ETH_RMII_REF_C LK": {
+      "ETH_RMII_REF_CLK": {
+        "actual": "ETH_RMII_REF_CLK",
         "pad-number": [
           "M2"
         ]
@@ -7096,7 +7107,8 @@
           "L7"
         ]
       },
-      "ETH_RMII_CRS_D V": {
+      "ETH_RMII_CRS_DV": {
+        "actual": "ETH_RMII_CRS_DV",
         "pad-number": [
           "M4"
         ]
@@ -7702,14 +7714,14 @@
           "K2"
         ]
       },
-      "ETH_RMII_RX_D0": {
-        "actual": "ETH_RMII_RX_D0",
+      "ETH_RMII_RXD0": {
+        "actual": "ETH_RMII_RXD0",
         "pad-number": [
           "K5"
         ]
       },
-      "ETH_MII_RX_D0": {
-        "actual": "ETH_MII_RX_D0",
+      "ETH_MII_RXD0": {
+        "actual": "ETH_MII_RXD0",
         "pad-number": [
           "K5"
         ]
@@ -7719,14 +7731,14 @@
           "K5"
         ]
       },
-      "ETH_RMII_RX_D1": {
-        "actual": "ETH_RMII_RX_D1",
+      "ETH_RMII_RXD1": {
+        "actual": "ETH_RMII_RXD1",
         "pad-number": [
           "L5"
         ]
       },
-      "ETH_MII_RX_D1": {
-        "actual": "ETH_MII_RX_D1",
+      "ETH_MII_RXD1": {
+        "actual": "ETH_MII_RXD1",
         "pad-number": [
           "L5"
         ]
