@@ -6,17 +6,24 @@
 
 提供查找外设引脚组合的命令行工具。支持搜索指定外设实例在特定封装中的引脚分配方案。
 
-注意：统一工作目录中的已处理的引脚复用表文件
-
 示例用法：
-    python find_pins.py search --package LQFP64 --pin-table pins_lqfp64.json USART1 "SPI1(with NSS)" I2C1
+    python find_pins.py search --package LQFP64 --pin-table pins.json USART1 "SPI1(with NSS)" I2C1
+    python find_pins.py search --package BGA121 --pin-table HPM5E3Y.json \\
+        "PWM0(3-phase)" QEI0 "SDM0(2ch)" "UART(RS485 DE)" CAN ADC0_IN03 --reserve PA02,PA03
+
+需求写法：
+    USART1              固定实例
+    USART               灵活实例，自动从 USART1/2/3... 中选一个可用的
+    SPI1(with NSS)      固定实例 + 指定变种（变种见 list 子命令）
+    ADC0_IN03           单个信号（引脚表中的信号名，或其原始名称）
 
 支持命令：
     list：打印外设及其变种信号列表
+    info：打印引脚表中的封装、外设实例
     search：搜索引脚分配方案
 
 API：
-    find_pins.search(pin_table_path, package, requirements) -> dict
+    find_pins.search(pin_table_path, package, requirements, peri_def_path=None, reserve=None) -> dict | None
 """
 
 import argparse
@@ -24,99 +31,133 @@ import json
 import os
 import re
 import sys
-from collections import defaultdict
+from collections import OrderedDict, defaultdict
 from itertools import product
 
-from normalization_signal import unpack_signal_name
-
-# 信号别名
+# 信号别名：peri_def 中的信号名 → 引脚表里可能出现的名字
 SIGNAL_ALIASES = {
-    "NSS": ["CS"],
-    "CS": ["NSS"],
+    "NSS": ["CS", "CS_0"],
+    "CS": ["NSS", "CS_0"],
 }
 
+RE_PTYPE = re.compile(r"([A-Za-z]+(?:\d[A-Za-z])*)")
+RE_REQ = re.compile(r"^(.+?)(?:\((.+?)\))?$")
 
-def _load_peri_def(path):
+
+def _default_peri_def_path():
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "peri_def.json")
+
+
+def _load_json(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
-def pin_number_to_int(pin_numnber: str) -> int:
-    try:
-        return int(pin_numnber)
-    except (ValueError, TypeError):
-        m = re.match(r"([A-Z])(\d+)", pin_numnber)
-        if m:
-            row, col = m.group(1), m.group(2)
-
-            return (ord(row[0]) - ord("A")) * 100 + int(col)
-
-    return 0
+def list_packages(json_object):
+    return [k for k in json_object if not k.startswith("_")]
 
 
-def get_pin_name(func: str, pad_number: int, pin_map: dict[str, str]) -> str:
-    for pin_name, value in pin_map.items():
-        if pin_number_to_int(pin_name) == pad_number:
-            return f"{func}: {value} ({pin_name})"
+def build_af_table(json_path, package):
+    """
+    加载 JSON 文件格式的引脚复用表。
+    返回 (af_table, pin_map, notes)，封装不存在时返回 None。
+    """
+    json_object = _load_json(json_path)
+    if package not in json_object or package.startswith("_"):
+        return None
 
-    return f"{func}: {pad_number}"
+    package_object = json_object[package]
+    af = package_object["peripheral_table"]
+    pin_map = package_object.get("pin_map", {})
+    notes = package_object.get("notes", {})
+
+    return af, pin_map, notes
+
+
+class RequirementError(ValueError):
+    pass
 
 
 class PinMapper:
-    def __init__(self, af_table, peri_def):
+    def __init__(self, af_table, peri_def, pin_map=None, notes=None):
         """
-        af_table:  dict { "USART1_TX": [pad, ...], ... }
+        af_table:  dict { "USART1_TX": {"pad-number": [pad, ...], "actual": "...", "alt": {...}}, ... }
         peri_def:  dict 从 peri_def.json 加载的外设变种定义
         """
         self.af_table = af_table
         self.peri_def = peri_def
+        self.pin_map = pin_map or {}
+        self.notes = notes or {}
+        self.actual_index = {}
+        for key, entry in af_table.items():
+            actual = entry.get("actual")
+            if actual:
+                self.actual_index.setdefault(actual, key)
 
+    # ---------- 外设类型 ----------
+    def _peri_variants(self, ptype, inst_name):
+        if ptype in self.peri_def:
+            return self.peri_def[ptype]
+        # 最长前缀匹配，避免 "SD" 抢先匹配 "SDM"
+        best = None
+        for key in self.peri_def:
+            if ptype.startswith(key) and (best is None or len(key) > len(best)):
+                best = key
+        if best is None:
+            raise RequirementError(
+                f"未知外设类型: {ptype} <-- {inst_name}（可直接写单个信号名，或在 peri_def.json 中补充定义）"
+            )
+        return self.peri_def[best]
+
+    def resolve_pin(self, pin):
+        """把 pad 名(PA02)或管脚号(C2)统一为管脚号"""
+        if pin in self.pin_map:
+            return pin
+        for num, name in self.pin_map.items():
+            if name == pin:
+                return num
+        return pin
+
+    # ---------- 实例展开 ----------
     def _expand_instance(self, inst_name, variant):
         """将单个实例展开为候选列表 [{inst_name, signals}]"""
-        mt = re.match(r"([A-Za-z]+(?:\d[A-Za-z])*)", inst_name)
+        mt = RE_PTYPE.match(inst_name)
+        if not mt:
+            raise RequirementError(f"无法识别的外设: {inst_name}")
         ptype = mt.group(1).upper()
-        peri_variants = None
-        for key, value in self.peri_def.items():
-            if ptype.startswith(key):
-                peri_variants = value
-                break
-        if peri_variants is None:
-            raise ValueError(f"未知外设类型: {ptype} <-- {inst_name}")
+        peri_variants = self._peri_variants(ptype, inst_name)
 
         vname = variant if variant else "default"
         if vname not in peri_variants:
             avail = [k for k in peri_variants if k != "force_"]
-            raise ValueError(f'变种 "{vname}" 不存在, {ptype} 可用: {avail}')
+            raise RequirementError(f'变种 "{vname}" 不存在, {ptype} 可用: {avail}')
         variant_sigs = peri_variants[vname]
 
         # 检查是否有实例编号: "USART1" → 有, "I2C" → 无
-        # 从 inst_name 中去掉类型名前缀，剩余部分即为实例编号
-        has_number = bool(re.sub(rf"^{re.escape(ptype)}", "", inst_name))
+        has_number = bool(re.sub(rf"^{re.escape(ptype)}", "", inst_name, flags=re.I))
 
         if has_number:
-            # 固定实例: 只展开这一个
-            c = self._expand_one(inst_name, ptype, variant_sigs, peri_variants)
+            c = self._expand_one(inst_name, variant_sigs, peri_variants)
             return [c] if c else []
-        else:
-            # 灵活实例: 枚举 af_table 中所有同类型实例
-            prefix = ptype
-            found = set()
-            for key in self.af_table:
-                m = re.match(rf"({re.escape(prefix)}[A-Z0-9]+)_", key)
-                if m:
-                    found.add(m.group(1))
-            if not found:
-                # 无编号实例(如 ETH), 用类型名本身作为唯一候选
-                c = self._expand_one(inst_name, ptype, variant_sigs, peri_variants)
-                return [c] if c else []
-            candidates = []
-            for name in sorted(found):
-                c = self._expand_one(name, ptype, variant_sigs, peri_variants)
-                if c:
-                    candidates.append(c)
-            return candidates
 
-    def _expand_one(self, inst_name, ptype, variant_sigs, peri_variants):
+        # 灵活实例: 枚举 af_table 中所有同类型实例
+        found = set()
+        for key in self.af_table:
+            m = re.match(rf"({re.escape(ptype)}[0-9]+)_", key)
+            if m:
+                found.add(m.group(1))
+        if not found:
+            # 无编号实例(如 ETH), 用类型名本身作为唯一候选
+            c = self._expand_one(inst_name, variant_sigs, peri_variants)
+            return [c] if c else []
+        candidates = []
+        for name in sorted(found, key=lambda s: (len(s), s)):
+            c = self._expand_one(name, variant_sigs, peri_variants)
+            if c:
+                candidates.append(c)
+        return candidates
+
+    def _expand_one(self, inst_name, variant_sigs, peri_variants):
         """展开单个实例，返回 {inst_name, signals} 或 None"""
         signals = []
         for fs in peri_variants.get("force_", []):
@@ -127,188 +168,234 @@ class PinMapper:
             full = f"{inst_name}_{s}"
             if full in self.af_table:
                 signals.append(full)
+                continue
+            for alias in SIGNAL_ALIASES.get(s, []):
+                full_alias = f"{inst_name}_{alias}"
+                if full_alias in self.af_table:
+                    signals.append(full_alias)
+                    break
             else:
-                for alias in SIGNAL_ALIASES.get(s, []):
-                    full_alias = f"{inst_name}_{alias}"
-                    if full_alias in self.af_table:
-                        signals.append(full_alias)
-                        break
-                else:
-                    return None
+                return None
         return {"inst_name": inst_name, "signals": signals}
 
-    def solve(self, required_instances, alias=None):
+    def _parse_requirement(self, req):
+        """返回 (label, candidates)"""
+        req = req.strip()
+        # 单个信号：精确命中信号名或原始名称
+        if req in self.af_table:
+            return req, [{"inst_name": req, "signals": [req]}]
+        if req in self.actual_index:
+            key = self.actual_index[req]
+            return req, [{"inst_name": key, "signals": [key]}]
+
+        if "(" not in req and re.match(r"^[A-Za-z][A-Za-z0-9-]*?\d*_\S+$", req):
+            # 形如单个信号名，但当前封装中没有
+            stem = req.rsplit("_", 1)[0]
+            near = sorted(k for k in self.af_table if k.startswith(stem))[:12]
+            hint = f"，当前封装中相近的信号: {' '.join(near)}" if near else ""
+            raise RequirementError(f"信号 {req} 在当前封装中不存在（未引出或已排除）{hint}")
+
+        m = RE_REQ.match(req)
+        if not m:
+            raise RequirementError(f"无法识别的需求: {req}")
+        inst_name = m.group(1).strip()
+        variant = m.group(2).strip() if m.group(2) else None
+        return req, self._expand_instance(inst_name, variant)
+
+    # ---------- 求解 ----------
+    def solve(self, required_instances, reserve=None):
         """
-        required_instances: list of str
-            "USART1"             → 固定实例, 只用 USART1
-            "USART"              → 灵活匹配, 自动选 USART1/2/3 中任一
-            "SPI1(with NSS)"     → 固定实例 + 指定变种
-        优先级: 固定实例先占位, 灵活实例填剩余空间。
-        返回: dict {信号名: 引脚号} 或 None
+        required_instances: list of str（写法见模块说明）
+        reserve: 预留（不参与分配）的引脚，管脚号或 pad 名
+        返回: [{"requirement", "instance", "signals": [{signal, actual, pin, pad, alt, note}]}] 或 None
         """
-        fixed = []  # 有编号: 每个只有 1 个候选
-        flexible = []  # 无编号: 每个有多个候选
-
-        for inst in required_instances:
-            m = re.match(r"^(.+?)(?:\((.+?)\))?$", inst)
-            if not m:
-                return None
-
-            inst_name = m.group(1).strip()
-            variant = m.group(2).strip() if m.group(2) else None
-
-            mt = re.match(r"([A-Za-z]+(?:\d[A-Za-z])*)", inst_name)
-            if not mt:
-                return None
-
-            ptype = mt.group(1).upper()
-            has_number = bool(re.sub(rf"^{re.escape(ptype)}", "", inst_name))
-
-            candidates = self._expand_instance(inst_name, variant)
+        entries = []
+        for req in required_instances:
+            label, candidates = self._parse_requirement(req)
             if not candidates:
-                print(f"⚠️ 警告: {inst_name} 无可用引脚组合，该实例将无法分配")
-                return None
+                raise RequirementError(f"{label} 在当前封装中没有可用的引脚组合（信号不全或未引出）")
+            entries.append({"label": label, "candidates": candidates})
 
-            entry = {"inst_key": inst_name, "candidates": candidates}
-            if has_number:
-                fixed.append(entry)
-            else:
-                flexible.append(entry)
+        # MRV 排序: 信号数多的优先, 同信号数时候选少的优先
+        order = sorted(
+            range(len(entries)),
+            key=lambda i: (
+                -max(len(c["signals"]) for c in entries[i]["candidates"]),
+                len(entries[i]["candidates"]),
+            ),
+        )
 
-        # MRV 排序: 信号数多的优先, 同信号数时固定实例优先
-        def sort_key(item):
-            sig_count = max(len(c["signals"]) for c in item["candidates"])
-            cand_count = len(item["candidates"])
-            return (-sig_count, cand_count)
-
-        sorted_instances = sorted(fixed + flexible, key=sort_key)
-
-        used_mask = 0
+        used_pins = {self.resolve_pin(p) for p in (reserve or [])}
         used_instances = set()
-        assignment = {}
+        chosen = {}  # entry index -> (cand, combo)
 
-        def backtrack(idx, af_table):
-            nonlocal used_mask
-            if idx == len(sorted_instances):
-                return True
+        def free_pins(sig):
+            return [p for p in self.af_table[sig]["pad-number"] if p not in used_pins]
 
-            entry = sorted_instances[idx]
-            for cand in entry["candidates"]:
-                signals = cand["signals"]
-                inst_name = cand["inst_name"]
-
-                # 同一物理实例不能被两个逻辑 slot 选中
-                if inst_name in used_instances:
+        def feasible(i):
+            for cand in entries[i]["candidates"]:
+                if cand["inst_name"] in used_instances:
                     continue
-
-                # 收集每个信号的可用引脚
-                candidates_per_signal = []
-                for sig in signals:
-                    avail = [
-                        p
-                        for p in af_table[sig]["pad-number"]
-                        if not (used_mask & (1 << p))
-                    ]
-                    if not avail:
-                        break
-                    candidates_per_signal.append(avail)
-                else:
-                    used_instances.add(inst_name)
-                    # 所有信号都有可用引脚, 尝试组合
-                    for combo in product(*candidates_per_signal):
-                        if len(set(combo)) != len(combo):
-                            continue
-                        for pin in combo:
-                            used_mask |= 1 << pin
-                        for sig, pin in zip(signals, combo):
-                            assignment[sig] = pin
-                        if backtrack(idx + 1, af_table):
-                            return True
-                        for pin in combo:
-                            used_mask &= ~(1 << pin)
-                        for sig in signals:
-                            assignment.pop(sig, None)
-                    used_instances.discard(inst_name)
-
+                if all(free_pins(s) for s in cand["signals"]):
+                    return True
             return False
 
-        # 把引脚编号（字符串格式）转换为整数
-        af_table = {}
-        for prei in self.af_table:
-            pads = [pin_number_to_int(p) for p in self.af_table[prei]["pad-number"]]
+        def backtrack(k):
+            if k == len(order):
+                return True
+            i = order[k]
+            for cand in entries[i]["candidates"]:
+                inst_name = cand["inst_name"]
+                # 同一物理实例不能被两个需求同时选中
+                if inst_name in used_instances:
+                    continue
+                pins_per_signal = [free_pins(s) for s in cand["signals"]]
+                if not all(pins_per_signal):
+                    continue
+                used_instances.add(inst_name)
+                for combo in product(*pins_per_signal):
+                    if len(set(combo)) != len(combo):
+                        continue
+                    used_pins.update(combo)
+                    # 前向检查：剩余每个需求至少还有一个候选
+                    if all(feasible(order[j]) for j in range(k + 1, len(order))):
+                        chosen[i] = (cand, combo)
+                        if backtrack(k + 1):
+                            return True
+                        chosen.pop(i, None)
+                    used_pins.difference_update(combo)
+                used_instances.discard(inst_name)
+            return False
 
-            if "actual" in self.af_table[prei]:
-                af_table[prei] = {"actual": self.af_table[prei], "pad-number": pads}
+        if not backtrack(0):
+            return None
+
+        result = []
+        for i, entry in enumerate(entries):
+            cand, combo = chosen[i]
+            sigs = []
+            for sig, pin in zip(cand["signals"], combo):
+                info = self.af_table[sig]
+                sigs.append(
+                    {
+                        "signal": sig,
+                        "actual": info.get("actual", sig),
+                        "pin": pin,
+                        "pad": self.pin_map.get(pin, ""),
+                        "alt": info.get("alt", {}).get(pin),
+                        "note": self.notes.get(pin, ""),
+                    }
+                )
+            result.append({"requirement": entry["label"], "instance": cand["inst_name"], "signals": sigs})
+        return result
+
+
+def search(pin_table_path, package, requirements, peri_def_path=None, reserve=None):
+    """Python API：返回分配结果列表，无解时返回 None"""
+    rc = build_af_table(pin_table_path, package)
+    if not rc:
+        raise RequirementError(f"引脚表中没有封装 {package}")
+    af_table, pin_map, notes = rc
+    peri_def = _load_json(peri_def_path or _default_peri_def_path())
+    return PinMapper(af_table, peri_def, pin_map, notes).solve(requirements, reserve)
+
+
+def _short_signal(inst, sig):
+    prefix = f"{inst}_"
+    return sig[len(prefix):] if sig.startswith(prefix) else sig
+
+
+def format_result(result, package):
+    lines = [f"查找成功，分配方案（封装 {package}）：", ""]
+    warnings = []
+    for item in result:
+        inst = item["instance"]
+        head = f"* {inst}"
+        if item["requirement"] != inst:
+            head += f"  ← {item['requirement']}"
+        lines.append(head)
+        for s in item["signals"]:
+            func = _short_signal(inst, s["signal"])
+            where = f"{s['pad']} ({s['pin']})" if s["pad"] else str(s["pin"])
+            extra = []
+            if s["alt"] is not None:
+                extra.append(s["alt"] if isinstance(s["alt"], str) else f"ALT{s['alt']}")
+            if s["actual"] != s["signal"]:
+                extra.append(s["actual"])
+            tail = f"  [{', '.join(extra)}]" if extra else ""
+            lines.append(f"  - {func}: {where}{tail}")
+            if s["note"]:
+                warnings.append(f"  {where} {s['actual']}: {s['note']}")
+    if warnings:
+        lines += ["", "⚠ 注意以下引脚："] + warnings
+    return "\n".join(lines)
+
+
+def print_info(json_path, package=None):
+    obj = _load_json(json_path)
+    meta = obj.get("_meta")
+    if meta:
+        print(f"芯片: {meta.get('chip', '')}  来源: {meta.get('source', '')}")
+        if meta.get("excluded_pads"):
+            print(f"已排除 pad: {', '.join(meta['excluded_pads'])}（{meta.get('excluded_reason', '')}）")
+    pkgs = list_packages(obj)
+    print(f"封装: {', '.join(pkgs)}")
+    for pkg in [package] if package else pkgs:
+        if pkg not in pkgs:
+            print(f"没有封装 {pkg}", file=sys.stderr)
+            sys.exit(1)
+        table = obj[pkg]["peripheral_table"]
+        groups = defaultdict(set)
+        singles = []
+        for key in table:
+            m = re.match(r"^([A-Z][A-Z0-9-]*?\d+)_", key)
+            if m:
+                ptype = RE_PTYPE.match(m.group(1)).group(1)
+                groups[ptype].add(m.group(1))
             else:
-                af_table[prei] = {"pad-number": pads}
-
-        if backtrack(0, af_table):
-            r = {}
-
-            for k, v in assignment.items():
-                peri = self.af_table[k]
-                key = peri.get("actual", k)
-
-                r[key] = v
-
-            return r
-
-        return None
+                singles.append(key)
+        print(f"\n[{pkg}] 信号 {len(table)} 个，外设实例：")
+        for ptype in sorted(groups):
+            insts = sorted(groups[ptype], key=lambda s: (len(s), s))
+            print(f"  {ptype}: {' '.join(insts)}")
+        if singles:
+            print(f"  其他信号: {' '.join(sorted(singles)[:40])}{' ...' if len(singles) > 40 else ''}")
+        notes = obj[pkg].get("notes", {})
+        if notes:
+            print("  引脚注释: " + "; ".join(f"{k} {obj[pkg]['pin_map'].get(k, '')}: {v}" for k, v in list(notes.items())[:20]))
 
 
-def build_af_table(json_path, package: str):
-    """
-    加载 JSON 文件格式的引脚复用表。
-    返回 af_table (dict) 和 pin_map (dict: pad→GPIO名)。
-    """
-    with open(json_path, encoding="utf-8") as f:
-        json_object = json.load(f)
-
-    if package not in json_object:
-        return None
-
-    package_object = json_object[package]
-    af = package_object["peripheral_table"]
-    pin_map = package_object.get("pin_map", {})
-
-    return af, pin_map
-
-
-if __name__ == "__main__":
-
+def main():
     parser = argparse.ArgumentParser("find-pins", description="查找外设引脚组合")
-    parser.add_argument(
-        "--peri-def",
-        help="外设变种定义文件 (默认 peri_def.json)",
-    )
-    subparsers = parser.add_subparsers(dest="command", required=True)
+    parser.add_argument("--peri-def", help="外设变种定义文件 (默认与本脚本同目录的 peri_def.json)")
+    subparsers = parser.add_subparsers(dest="command")
+    subparsers.required = True
 
-    sp_list = subparsers.add_parser("list", help="打印外设（及变种）信号列表")
+    subparsers.add_parser("list", help="打印外设（及变种）信号列表")
+
+    sp_info = subparsers.add_parser("info", help="打印引脚表中的封装和外设实例")
+    sp_info.add_argument("--pin-table", required=True, help="引脚定义 JSON 文件")
+    sp_info.add_argument("--package", help="只看某个封装")
+
     sp_search = subparsers.add_parser("search", help="搜索引脚分配方案")
-
     sp_search.add_argument("--package", required=True, help="封装类型")
     sp_search.add_argument("--pin-table", required=True, help="引脚定义 JSON 文件")
-    sp_search.add_argument("--alias", help="别名映射文件，JSON格式，可选")
+    sp_search.add_argument("--reserve", default="", help="预留引脚（管脚号或 pad 名，逗号分隔），不参与分配")
+    sp_search.add_argument("--json", action="store_true", help="以 JSON 输出结果")
+    sp_search.add_argument("--alias", help=argparse.SUPPRESS)  # 兼容旧参数，未使用
     sp_search.add_argument(
         "requirements",
         nargs="*",
         metavar="PERIPH",
-        help='需求列表，如: USART1 "SPI1(with NSS)" I2C1',
+        help='需求列表，如: USART1 "SPI1(with NSS)" I2C1 ADC0_IN03',
     )
 
     args = parser.parse_args()
-
-    if not args.peri_def:
-        # 使用默认的 peri_def.json 文件
-        args.peri_def = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "peri_def.json"
-        )
-
-    if not os.path.isfile(args.peri_def):
-        print(f'--peri-def 文件 "{args.peri_def}" 不存在', file=sys.stderr)
+    peri_def_path = args.peri_def or _default_peri_def_path()
+    if not os.path.isfile(peri_def_path):
+        print(f'--peri-def 文件 "{peri_def_path}" 不存在', file=sys.stderr)
         sys.exit(1)
-
-    peri_def = _load_peri_def(args.peri_def)
+    peri_def = _load_json(peri_def_path)
 
     if args.command == "list":
         for ptype in sorted(peri_def):
@@ -321,57 +408,51 @@ if __name__ == "__main__":
                 if vname == "force_":
                     continue
                 print(f"  {vname}: {', '.join(sigs)}")
-        print()
-    elif args.command == "search":
-        if not os.path.isfile(args.pin_table):
-            print(f'--pin-table 文件 "{args.pin_table}" 不存在', file=sys.stderr)
-            sys.exit(1)
+        return
 
-        if args.alias and not os.path.isfile(args.alias):
-            print(f'别名文件已指定 "{args.alias}"，但是文件不存在', file=sys.stderr)
-            sys.exit(1)
+    if not os.path.isfile(args.pin_table):
+        print(f'--pin-table 文件 "{args.pin_table}" 不存在', file=sys.stderr)
+        sys.exit(1)
 
-        if not args.requirements:
-            print("请指定外设需求，示例:", file=sys.stderr)
-            print(
-                '  python find_pins.py --pin-table pins_lqfp48.json USART1 "SPI1(with NSS)" I2C1',
-                file=sys.stderr,
-            )
-            print("使用 --list 查看可选外设及变种", file=sys.stderr)
-            sys.exit(1)
+    if args.command == "info":
+        print_info(args.pin_table, args.package)
+        return
 
-        rc = build_af_table(args.pin_table, args.package)
-        if not rc:
-            print("引脚复用表发生错误")
-            sys.exit(1)
+    if not args.requirements:
+        print("请指定外设需求，示例:", file=sys.stderr)
+        print('  python find_pins.py search --pin-table pins.json --package LQFP48 USART1 "SPI1(with NSS)" I2C1', file=sys.stderr)
+        print("使用 list 子命令查看可选外设及变种，info 子命令查看引脚表内容", file=sys.stderr)
+        sys.exit(1)
 
-        af_table, pin_map = rc
-        mapper = PinMapper(af_table, peri_def)
-        result = mapper.solve(args.requirements, args.alias)
+    rc = build_af_table(args.pin_table, args.package)
+    if not rc:
+        pkgs = list_packages(_load_json(args.pin_table))
+        print(f"引脚表中没有封装 {args.package}，可用: {', '.join(pkgs)}", file=sys.stderr)
+        sys.exit(1)
 
-        if result:
-            print("查找成功，分配方案：\n")
-            grouped = defaultdict(lambda: defaultdict(dict))
-            for sig, pin in result.items():
+    af_table, pin_map, notes = rc
+    mapper = PinMapper(af_table, peri_def, pin_map, notes)
+    reserve = [x.strip() for x in args.reserve.split(",") if x.strip()]
+    try:
+        result = mapper.solve(args.requirements, reserve)
+    except RequirementError as e:
+        print(f"需求有误: {e}", file=sys.stderr)
+        sys.exit(2)
 
-                r = unpack_signal_name(sig)
-                if r is None:
-                    continue
+    if args.json:
+        print(json.dumps(
+            {"package": args.package, "ok": result is not None, "assignment": result or []},
+            ensure_ascii=False, indent=2,
+        ))
+        sys.exit(0 if result else 3)
 
-                inst_key = f"{r[0]}{r[1]}"
-                phys = f"{r[0]}{r[1]}"
-                func = r[2]
-                grouped[inst_key][phys][func] = pin
+    if result:
+        print(format_result(result, args.package))
+    else:
+        print("在当前复用表下，无法同时满足所有外设需求。")
+        print("   建议：减少外设数量、改用灵活实例（如 UART 代替 UART3）、去掉部分预留引脚，或更换更大封装。")
+        sys.exit(3)
 
-            for inst_key, instances in grouped.items():
-                for phys, funcs in instances.items():
-                    pin_str = "\n  - ".join(
-                        [
-                            f"{get_pin_name(func, pin, pin_map)}"
-                            for func, pin in funcs.items()
-                        ]
-                    )
-                    print(f"* {phys} {'\n  - ' + pin_str}")
-        else:
-            print("在当前复用表下，无法同时满足所有外设需求。")
-            print("   建议：更换更大封装的芯片，或减少外设数量。")
+
+if __name__ == "__main__":
+    main()

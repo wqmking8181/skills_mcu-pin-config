@@ -27,8 +27,10 @@ Excel 文件结构要求：
         }
     }
 
-Usage: python convert_pin_table_to_json.py --dest output --filepath pins.xlsx
+Usage: python convert_pin_table_to_json.py --dest output pins.xlsx
 """
+
+from __future__ import annotations
 
 import argparse
 import csv

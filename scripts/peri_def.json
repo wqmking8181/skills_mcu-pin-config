@@ -3,6 +3,11 @@
     "default": [
       "RX",
       "TX"
+    ],
+    "with STBY": [
+      "RX",
+      "STBY",
+      "TX"
     ]
   },
   "DMC": {
@@ -124,8 +129,7 @@
       "JTCK",
       "JTDI",
       "JTDO",
-      "JTMS",
-      "NJTRST"
+      "JTMS"
     ]
   },
   "SWD": {
@@ -306,6 +310,14 @@
       "MOSI",
       "NSS",
       "SCK"
+    ],
+    "quad, with NSS": [
+      "MISO",
+      "MOSI",
+      "DAT2",
+      "DAT3",
+      "NSS",
+      "SCK"
     ]
   },
   "TMR": {
@@ -335,6 +347,203 @@
     "default": [
       "RX",
       "TX"
+    ],
+    "hw flow-ctrl": [
+      "CTS",
+      "RTS",
+      "RX",
+      "TX"
+    ],
+    "RS485 DE": [
+      "DE",
+      "RX",
+      "TX"
+    ]
+  },
+  "PWM": {
+    "default": [
+      "A",
+      "B"
+    ],
+    "pair0": [
+      "P_0",
+      "P_1"
+    ],
+    "pair1": [
+      "P_2",
+      "P_3"
+    ],
+    "pair2": [
+      "P_4",
+      "P_5"
+    ],
+    "pair3": [
+      "P_6",
+      "P_7"
+    ],
+    "3-phase": [
+      "P_0",
+      "P_1",
+      "P_2",
+      "P_3",
+      "P_4",
+      "P_5"
+    ],
+    "8ch": [
+      "P_0",
+      "P_1",
+      "P_2",
+      "P_3",
+      "P_4",
+      "P_5",
+      "P_6",
+      "P_7"
+    ]
+  },
+  "QEI": {
+    "default": [
+      "A",
+      "B",
+      "Z"
+    ],
+    "AB": [
+      "A",
+      "B"
+    ],
+    "with home": [
+      "A",
+      "B",
+      "Z",
+      "H0"
+    ],
+    "with fault": [
+      "A",
+      "B",
+      "Z",
+      "F"
+    ]
+  },
+  "QEO": {
+    "default": [
+      "A",
+      "B",
+      "Z"
+    ],
+    "AB": [
+      "A",
+      "B"
+    ]
+  },
+  "QEP": {
+    "default": [
+      "A",
+      "B",
+      "INDEX"
+    ],
+    "AB": [
+      "A",
+      "B"
+    ],
+    "with STROBE": [
+      "A",
+      "B",
+      "INDEX",
+      "STROBE"
+    ]
+  },
+  "SEI": {
+    "default": [
+      "CK",
+      "DE",
+      "RX",
+      "TX"
+    ],
+    "no clock": [
+      "DE",
+      "RX",
+      "TX"
+    ]
+  },
+  "SDM": {
+    "default": [
+      "CLK_0",
+      "DAT_0"
+    ],
+    "ch0": [
+      "CLK_0",
+      "DAT_0"
+    ],
+    "ch1": [
+      "CLK_1",
+      "DAT_1"
+    ],
+    "ch2": [
+      "CLK_2",
+      "DAT_2"
+    ],
+    "ch3": [
+      "CLK_3",
+      "DAT_3"
+    ],
+    "2ch": [
+      "CLK_0",
+      "DAT_0",
+      "CLK_1",
+      "DAT_1"
+    ],
+    "3ch": [
+      "CLK_0",
+      "DAT_0",
+      "CLK_1",
+      "DAT_1",
+      "CLK_2",
+      "DAT_2"
+    ],
+    "4ch": [
+      "CLK_0",
+      "DAT_0",
+      "CLK_1",
+      "DAT_1",
+      "CLK_2",
+      "DAT_2",
+      "CLK_3",
+      "DAT_3"
+    ]
+  },
+  "SD": {
+    "default": [
+      "D1",
+      "C1"
+    ],
+    "ch1": [
+      "D1",
+      "C1"
+    ],
+    "ch2": [
+      "D2",
+      "C2"
+    ],
+    "ch3": [
+      "D3",
+      "C3"
+    ],
+    "ch4": [
+      "D4",
+      "C4"
+    ],
+    "3ch": [
+      "D1",
+      "C1",
+      "D2",
+      "C2",
+      "D3",
+      "C3"
+    ]
+  },
+  "RDC": {
+    "default": [
+      "PWM_P",
+      "PWM_N"
     ]
   },
   "USART": {

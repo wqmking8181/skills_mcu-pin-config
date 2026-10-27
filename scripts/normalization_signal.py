@@ -15,7 +15,8 @@ MCU外设信号名称标准化处理模块，负责将各种格式的信号名�
 
 标准化规则：
     - 将 A-Z 格式的序号转换为数字（A-0, B-1, ...）
-    - 处理已知信号别名（如 SPI中的NSS对应CS）
+    - 外设改名（如先楫 MCAN → CAN）
+    - 处理已知信号别名（如 SPI 中的 NSS 对应 CS，UART 的 TXD 对应 TX）
     - 保留原始信号名称的 actual 字段信息
 
 函数:
@@ -26,6 +27,7 @@ MCU外设信号名称标准化处理模块，负责将各种格式的信号名�
     normalization("SPI1_TX") -> ("SPI", "1", "TX")
     normalization("SPI_TX") -> ("SPI", "", "TX")
     normalization("SPIA_TX") -> ("SPI", "0", "TX")  # A-Z转数字
+    normalization("MCAN0_TXD") -> ("CAN", "0", "TX")  # 先楫
 """
 
 import re
@@ -60,7 +62,38 @@ PERIPHERAL_PREFIXES = (
     "OTG-FS",
     "OTG-HS",
     "WKUP",
+    # 电机控制类（G32R5xx / C2000 风格）
+    "PWM",
+    "QEP",
+    "SD",
+    "PMBUS",
+    "LIN",
+    # 先楫 HPMicro
+    "ACMP",
+    "DAO",
+    "ESC",
+    "EUI",
+    "FEMC",
+    "GPTMR",
+    "MCAN",
+    "OWR",
+    "PDM",
+    "PPI",
+    "QEI",
+    "QEO",
+    "RDC",
+    "SDM",
+    "SEI",
+    "TRGM",
+    "TSW",
+    "USB",
+    "XPI",
 )
+
+# 外设改名：不同厂商对同一类外设的叫法
+PERIPHERAL_RENAME = {
+    "MCAN": "CAN",  # 先楫 CAN-FD
+}
 
 # 记录一些信号别名
 SIGNAL_ALIAS = {
@@ -83,10 +116,19 @@ SIGNAL_ALIAS = {
         "SS_N": "CS",
         "SCLK": "SCK",
     },
+    "UART": {
+        "TXD": "TX",  # 先楫
+        "RXD": "RX",
+    },
+    "CAN": {
+        "TXD": "TX",  # 先楫
+        "RXD": "RX",
+    },
 }
 
-# "外设信号"正则表达式
-rex_peri = re.compile(f"^({"|".join([f"{p}" for p in PERIPHERAL_PREFIXES])})(\\S+)$")
+# "外设信号"正则表达式：长前缀优先，避免 SD 抢先匹配 SDM/SDIO
+_prefix_alt = "|".join(re.escape(p) for p in sorted(PERIPHERAL_PREFIXES, key=len, reverse=True))
+rex_peri = re.compile("^(" + _prefix_alt + ")(\\S+)$")
 # 外设的"信号"正则表达式
 rex_signal_name = re.compile("^([A-Z0-9]+)_(\\S+)$")
 
@@ -118,7 +160,7 @@ def unpack_signal_name(signal_in: str):
     return peri_name, peri_index, signal_name
 
 
-def normalization(signal_in) -> tuple[str, str, str] | None:
+def normalization(signal_in):
     """把符合以下格式的*非正规化*信号名称，转化
     - [外设名称][信号名称]
     - [外设名称]_[信号名称]
@@ -131,9 +173,11 @@ def normalization(signal_in) -> tuple[str, str, str] | None:
 
     peri_name, peri_index, signal_name = res
 
-    if peri_index and peri_index in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+    if len(peri_index) == 1 and peri_index in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
         # 规范化：把A-Z 的序号改为数值，A-0, B-1 ...
         peri_index = f"{ord(peri_index) - ord('A')}"
+
+    peri_name = PERIPHERAL_RENAME.get(peri_name, peri_name)
 
     if peri_name in SIGNAL_ALIAS and signal_name in SIGNAL_ALIAS[peri_name]:
         signal_name = SIGNAL_ALIAS[peri_name][signal_name]
