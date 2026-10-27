@@ -36,4 +36,4 @@ python scripts/convert_pin_table_to_json.py --dest data "data/Geehy MCU Pin Tabl
 
 ## 致谢
 
-基于 [Quincy-Zh/skills_mcu-pin-config](https://github.com/Quincy-Zh/skills_mcu-pin-config)（MIT），在其求解器基础上扩展了先楫 HPM 支持与伺服外设定义。
+基于 [Quincy-Zh/skills_mcu-pin-config](https://github.com/Quincy-Zh/skills_mcu-pin-config)（MIT），在其求解器基础上扩展了先楫 HPM 支持。
